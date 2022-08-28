@@ -1,60 +1,211 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>pluriverse.wtf</title>
+	<meta name="description" content="step into the solarpunk pluriverse...">
+    
+	<!-- fonts & stylesheets -->
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="preload" href="./assets/fonts/Avara-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+	<!-- preloads -->
+	<link rel="preload" as="image" href="./assets/1.png">
+	<link rel="preload" as="image" href="./assets/2.png">
+	<link rel="preload" as="image" href="./assets/3.png">
+	<link rel="preload" as="image" href="./assets/mobile-bg.png">
+	<link rel="preload" as="image" href="./assets/front-cover-320.jpg">
+	<link rel="preload" as="image" href="./assets/front-cover-426.jpg">
+
+	<!-- twitter cards & og -->
 	<meta name="twitter:domain" content="pluriverse.wtf" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@web3eventco" />
 	<meta property="twitter:title" content="pluriverse.wtf" />
 	<meta property="twitter:description" content="step into the solarpunk pluriverse...">
-	<meta name="twitter:image" content="https://pluriverse.wtf/assets/logo.png" />
-	<meta property="twitter:image" content="https://pluriverse.wtf/assets/logo.png" />
-	<meta name="twitter:image:width" content="3040" />
-	<meta name="twitter:image:height" content="1746" />
+	<meta name="twitter:image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png" />
+	<meta property="twitter:image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png" />
 
+	<meta property="og:title" content="pluriverse.wtf">
+	<meta property="og:description" content="step into the solarpunk pluriverse...">
+    <meta property="og:url" content="https://pluriverse.wtf">
+    <meta property="og:image" itemprop="image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png">
+
+	<!-- icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/site.webmanifest">
+	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<div id=main class="center">
-		<h1>Step into the Pluriverse</h1>
-		<a href="https://online.fliphtml5.com/kpnio/fszd/">
-			<img id=logo src="assets/logo_half.png">
-		</a>
-		<br>
-		<br>
-		<a href="https://bits.owocki.com/5zuP82qn">
-			Read the Pluriverse Guide (PDF)
-		</a> |
-		<a href="https://online.fliphtml5.com/kpnio/fszd/">
-			Read the Pluriverse Guide (FlipBook)
-		</a> |
-		<a href="https://t.me/+p_R5Ny6CPe9mZjY5">Join the telegram channel</a>
+	<div class="hero">
+		<div class="background">
+			<picture>
+				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
+				<source media="(min-width: 58rem)" srcset="./assets/1.png" width='2000' height='1243' />
+				<img class="layer-1" src="./assets/1.png" alt="" width='2000' height='1243' />
+			</picture>
+			<picture>
+				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
+				<source media="(min-width: 58rem)" srcset="./assets/2.png" width='2000' height='1243' />
+				<img class="layer-2" src="./assets/2.png" alt="" width='2000' height='1243' />
+			</picture>
+		</div>
+
+		<div class="hero-container">
+			<div class="hero-content">
+				<h1>Step into the<br/>Pluriverse</h1>
+				<p>
+					Read the guide &nbsp;
+					<a href="https://bits.owocki.com/5zuP82qn">[PDF] &nbsp;</a>
+					<a href="https://online.fliphtml5.com/kpnio/fszd/"> [Flipbook]</a>
+				</p>
+				<a href="https://t.me/+p_R5Ny6CPe9mZjY5">Join the Telegram channel</a>
+			</div>
+
+			<a href="https://online.fliphtml5.com/kpnio/fszd/">
+				<picture>
+					<source 
+						media="(max-width: 80rem)" 
+						srcset="./assets/front-cover-320.jpg 1x,
+						./assets/front-cover-320-2x.jpg 2x" 
+						width='320' height='403'/>
+					<source 
+					media="(min-width: 80.1rem)" 
+					srcset="./assets/front-cover-426.jpg 1x,
+					./assets/front-cover-426-2x.jpg 2x," 
+					width='426' height='538'/>
+					<img class="logo" src='./assets/mobile-cover.jpg' width='426' height='538' alt="a guide to the pluriverse" />
+				</picture>
+			</a>
+		</div>
 	</div>
+
+	<script>
+		document.addEventListener("mousemove", parallax);
+		function parallax(event) {
+			const layer1 = document.querySelector(".layer-1");
+			const layer2 = document.querySelector(".layer-2");
+			const position = 7;
+			const x1 = (window.innerWidth - event.pageX * position) / 90;
+			const y1 = (window.innerHeight - event.pageY * position) / 90;
+			layer1.style.transform = `translateX(${x1}px) translateY(${y1}px)`;
+
+			const x2 = (window.innerWidth - event.pageX * 12) / 90;
+			const y2 = (window.innerHeight - event.pageY * 12) / 90;
+			layer2.style.transform = `translateX(${x2}px) translateY(${y2}px)`;
+		}
+	</script>
 </body>
 
 <style type="text/css">
-	body{
-		background-color: #1c171e;
-		color: white;
+	@font-face {
+		font-family: 'Avara';
+		src: url('./assets/fonts/Avara-Bold.woff2') format('woff2'),
+			 url('./assets/fonts/Avara-Bold.woff') format('woff'),
+			 url('./assets/fonts/Avara-Bold.ttf')  format('truetype');
+		font-weight: 700;
+		font-display: swap;
+	}
+	body {
+		background-color: #2D2038;
+		color: #F4E5C9;
+		font-family: 'Avara';
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 180%;
+		box-sizing: border-box;
+		overflow-x: hidden;
+	}
+
+	h1 {
+		color: #FF9658;
+		font-size: 3.75rem;
+		line-height: 120%;
+		padding-bottom: 3rem;
 	}
 	a {
-		color: white;
-		font-weight: normal;
+		color: #F4E5C9;
+		transition: color 0.3s ease-out;
+		text-decoration: none;
 	}
-	#logo {
-		max-width: 75%;
+	a:hover {
+		color: #51C3A6;
 	}
-	#main {
-		 	font-family: "Miriam Libre",sans-serif;
-   			font-weight: 500;
-   			text-align: center;
+
+	.hero {
+		min-height: 100vh;
+		overflow-x: hidden;
+		background-image: url('./assets/3.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+
+	.hero-container {
+		display: flex;
+		gap: 8rem;
+		min-height: 100vh;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-content {
+		padding-bottom: 5.5rem;
+	}
+
+	.logo {
+		
+		height: auto;
+		transition: transform 0.3s ease-in-out;
+	}
+	.logo:hover {
+		transform: scale(1.1);
 	}
 
 
-	.center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 10px;
+	.background,
+	.background img {
+		position: absolute;
+		top: -1%;
+		left: -2%;
+		right: 0;
+		bottom: 0;
+		max-height: 130vh;
+		width: 130vw;
+		height: auto;
+		z-index: -2;
+		overflow: hidden;
+	}
+
+	@media only screen and (max-width: 58rem) {
+		.hero-container {
+			flex-direction: column-reverse;
+			padding: 4rem 0;
+			min-height: unset;
+			gap: 3rem;
+			text-align: center;
+		}
+		.hero {
+			background-image: url('./assets/mobile-bg.png');
+		}
+	}
+	@media only screen and (max-width: 50rem) {
+		body {
+			font-size: 1.2rem;
+		}
+		h1 {
+			font-size: 3rem;
+		}
 	}
 </style>
 </html>
