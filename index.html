@@ -72,8 +72,16 @@
 
 			<a href="https://online.fliphtml5.com/kpnio/fszd/">
 				<picture>
-					<source media="(max-width: 80rem)" srcset="./assets/front-cover-320.jpg" width='320' height='403'/>
-					<source media="(min-width: 80.1rem)" srcset="./assets/front-cover-426.jpg" width='426' height='538'/>
+					<source 
+						media="(max-width: 80rem)" 
+						srcset="./assets/front-cover-320.jpg 1x,
+						./assets/front-cover-320-2x.jpg 2x" 
+						width='320' height='403'/>
+					<source 
+					media="(min-width: 80.1rem)" 
+					srcset="./assets/front-cover-426.jpg 1x,
+					./assets/front-cover-426-2x.jpg 2x," 
+					width='426' height='538'/>
 					<img class="logo" src='./assets/mobile-cover.jpg' width='426' height='538' alt="a guide to the pluriverse" />
 				</picture>
 			</a>
