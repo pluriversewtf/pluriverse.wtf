@@ -65,10 +65,15 @@
 				<p>
 					Read the guide &nbsp;
 					<a href="https://bits.owocki.com/5zuP82qn">[PDF] &nbsp;</a>
-					<a href="https://online.fliphtml5.com/kpnio/fszd/"> [Flipbook]</a>
+					<a href="https://online.fliphtml5.com/wryqh/bdyf/"> [Flipbook]</a>
 				</p>
-				<a href="https://t.me/+p_R5Ny6CPe9mZjY5">Join the Telegram channel</a>
-			</div>
+        <p>Buy the book &nbsp;
+				  <a href="https://www.blurb.com/b/11250092-a-guide-to-the-pluriverse">[Softcover]</a>
+        </p>
+        <p>Join the channel &nbsp;
+          <a href="https://t.me/+p_R5Ny6CPe9mZjY5">[Telegram]</a>
+        </p>
+      </div>
 
 			<a href="https://online.fliphtml5.com/kpnio/fszd/">
 				<picture>
@@ -123,6 +128,7 @@
 		line-height: 180%;
 		box-sizing: border-box;
 		overflow-x: hidden;
+    max-width: 100vw;
 	}
 
 	h1 {
@@ -160,7 +166,9 @@
 	}
 
 	.hero-content {
-		padding-bottom: 5.5rem;
+		padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 	}
 
 	.logo {
@@ -196,9 +204,16 @@
 			text-align: center;
 		}
 		.hero {
+      min-height: unset;
 			background-image: url('./assets/mobile-bg.png');
 		}
-	}
+    .background,
+    .background img {
+      width: 100%;
+      height: auto;
+      
+    }
+  }
 	@media only screen and (max-width: 50rem) {
 		body {
 			font-size: 1.2rem;
