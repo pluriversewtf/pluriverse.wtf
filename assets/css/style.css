@@ -1,0 +1,124 @@
+/* general styles */
+@font-face {
+  font-family: 'Avara';
+  src: url('../fonts/Avara-Bold.woff2') format('woff2'),
+      url('../fonts/Avara-Bold.woff') format('woff'),
+      url('../fonts/Avara-Bold.ttf')  format('truetype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  background-color: #2D2038;
+  color: #F4E5C9;
+  font-family: 'Avara';
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 180%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+h1 {
+  color: #FF9658;
+  font-size: 3.75rem;
+  line-height: 120%;
+  padding-bottom: 3rem;
+}
+a {
+  color: #F4E5C9;
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+}
+a:hover {
+  color: #51C3A6;
+}
+
+/* hero section */
+
+.hero {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero-container {
+  display: flex;
+  gap: 8rem;
+  min-height: 100vh;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.background,
+.background img {
+  position: absolute;
+  top: -1%;
+  left: -2%;
+  right: 0;
+  bottom: 0;
+  max-height: 130vh;
+  width: 130vw;
+  height: auto;
+  z-index: -2;
+  overflow: hidden;
+}
+.background {
+  position: fixed;
+}
+
+@media only screen and (max-width: 58rem) {
+  body {
+    background-image: url('../mobile-bg.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    padding: 4rem 0;
+    min-height: unset;
+    gap: 3rem;
+    text-align: center;
+  }
+  .hero {
+    min-height: unset;
+  }
+  .background {
+    display: none;
+  }
+  .background,
+  .background img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* content */
+
+
+/* fonts */
+@media only screen and (max-width: 50rem) {
+  body {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
