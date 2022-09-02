@@ -8,7 +8,8 @@
 	<meta name="description" content="step into the solarpunk pluriverse...">
     
 	<!-- fonts & stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="preload" href="./assets/fonts/Avara-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- preloads -->
@@ -57,6 +58,11 @@
 				<source media="(min-width: 58rem)" srcset="./assets/2.png" width='2000' height='1243' />
 				<img class="layer-2" src="./assets/2.png" alt="" width='2000' height='1243' />
 			</picture>
+      <picture>
+				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
+				<source media="(min-width: 58rem)" srcset="./assets/3.png" width='2000' height='1243' />
+				<img class="layer-3" src="./assets/3.png" alt="" width='2000' height='1243' />
+			</picture>
 		</div>
 
 		<div class="hero-container">
@@ -64,8 +70,8 @@
 				<h1>Step into the<br/>Pluriverse</h1>
 				<p>
 					Read the guide &nbsp;
-					<a href="https://bits.owocki.com/5zuP82qn">[PDF] &nbsp;</a>
-					<a href="https://online.fliphtml5.com/wryqh/bdyf/"> [Flipbook]</a>
+					<a href="./assets/pluriverse-guide.pdf">[PDF] &nbsp;</a>
+					<a href="https://heyzine.com/flip-book/569e056208.html"> [Flipbook]</a>
 				</p>
         <p>Buy the book &nbsp;
 				  <a href="https://www.blurb.com/b/11250092-a-guide-to-the-pluriverse">[Softcover]</a>
@@ -75,7 +81,7 @@
         </p>
       </div>
 
-			<a href="https://online.fliphtml5.com/kpnio/fszd/">
+			<a href="https://heyzine.com/flip-book/569e056208.html">
 				<picture>
 					<source 
 						media="(max-width: 80rem)" 
@@ -93,6 +99,9 @@
 		</div>
 	</div>
 
+  <section class="past">
+  </section>
+
 	<script>
 		document.addEventListener("mousemove", parallax);
 		function parallax(event) {
@@ -109,118 +118,4 @@
 		}
 	</script>
 </body>
-
-<style type="text/css">
-	@font-face {
-		font-family: 'Avara';
-		src: url('./assets/fonts/Avara-Bold.woff2') format('woff2'),
-			 url('./assets/fonts/Avara-Bold.woff') format('woff'),
-			 url('./assets/fonts/Avara-Bold.ttf')  format('truetype');
-		font-weight: 700;
-		font-display: swap;
-	}
-	body {
-		background-color: #2D2038;
-		color: #F4E5C9;
-		font-family: 'Avara';
-		font-weight: 700;
-		font-size: 1.5rem;
-		line-height: 180%;
-		box-sizing: border-box;
-		overflow-x: hidden;
-    max-width: 100vw;
-	}
-
-	h1 {
-		color: #FF9658;
-		font-size: 3.75rem;
-		line-height: 120%;
-		padding-bottom: 3rem;
-	}
-	a {
-		color: #F4E5C9;
-		transition: color 0.3s ease-out;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #51C3A6;
-	}
-
-	.hero {
-		min-height: 100vh;
-		overflow-x: hidden;
-		background-image: url('./assets/3.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: auto;
-	}
-
-	.hero-container {
-		display: flex;
-		gap: 8rem;
-		min-height: 100vh;
-		display: flex;
-		height: 100%;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.hero-content {
-		padding-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-	}
-
-	.logo {
-		
-		height: auto;
-		transition: transform 0.3s ease-in-out;
-	}
-	.logo:hover {
-		transform: scale(1.1);
-	}
-
-
-	.background,
-	.background img {
-		position: absolute;
-		top: -1%;
-		left: -2%;
-		right: 0;
-		bottom: 0;
-		max-height: 130vh;
-		width: 130vw;
-		height: auto;
-		z-index: -2;
-		overflow: hidden;
-	}
-
-	@media only screen and (max-width: 58rem) {
-		.hero-container {
-			flex-direction: column-reverse;
-			padding: 4rem 0;
-			min-height: unset;
-			gap: 3rem;
-			text-align: center;
-		}
-		.hero {
-      min-height: unset;
-			background-image: url('./assets/mobile-bg.png');
-		}
-    .background,
-    .background img {
-      width: 100%;
-      height: auto;
-      
-    }
-  }
-	@media only screen and (max-width: 50rem) {
-		body {
-			font-size: 1.2rem;
-		}
-		h1 {
-			font-size: 3rem;
-		}
-	}
-</style>
 </html>
