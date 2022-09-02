@@ -26,12 +26,28 @@ h1 {
   line-height: 120%;
   padding-bottom: 3rem;
 }
-a {
+
+.link {
   color: #F4E5C9;
   transition: color 0.3s ease-out;
   text-decoration: none;
+  position: relative;
 }
-a:hover {
+
+.link::after {
+  content: '';
+  position: absolute;
+  background-color: #FF9658;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -15%;
+  transition: width 0.3s ease-out;
+}
+.link:hover::after {
+  width: 100%;
+}
+.link:hover {
   color: #51C3A6;
 }
 
@@ -111,7 +127,30 @@ a:hover {
 }
 
 /* content */
+section {
+  padding: 3rem 2rem;
+}
 
+/* footer */
+footer {
+  padding: 2rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid #faba94;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 50rem) {
+  footer {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
 
 /* fonts */
 @media only screen and (max-width: 50rem) {
@@ -120,5 +159,11 @@ a:hover {
   }
   h1 {
     font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 31.25rem) {
+  footer {
+    font-size: 0.8rem;
   }
 }
