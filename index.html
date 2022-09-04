@@ -109,23 +109,114 @@
 		</div>
 	</div>
 
-  <section class="past">
+  <section class="past-comics">
+    <div class="covers">
+      <a class="cover cover1" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">
+        <picture>
+          <source
+          media="(min-width: 58rem)" 
+					srcset="./assets/comics/comic1.png 1x,
+					./assets/comics/comic1-2x.png 2x," 
+					width='285' height='438'/>
+          <source
+          media="(max-width: 35.5rem)" 
+					srcset="./assets/comics/comic1-mobile.png 1x,
+          ./assets/comics/comic1-mobile-2x.png 2x"
+					width='151' height='232'/>
+          <source
+          media="(max-width: 58rem)" 
+					srcset="./assets/comics/comic1-small.png 1x,
+					./assets/comics/comic1-small-2x.png 2x," 
+					width='201' height='309'/>
+          <img src='./assets/comics/comic1.png' width='285' height='438' alt="comic 1 cover" />
+        </picture>
+      </a>
+      <a class="cover cover2" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">
+        <picture>
+          <source
+          media="(min-width: 58rem)" 
+					srcset="./assets/comics/comic2.png 1x,
+					./assets/comics/comic2-2x.png 2x," 
+					width='283' height='438'/>
+          <source
+          media="(max-width: 35.5rem)" 
+					srcset="./assets/comics/comic2-mobile.png 1x,
+          ./assets/comics/comic2-mobile-2x.png 2x"
+					width='151' height='234'/>
+          <source
+          media="(max-width: 58rem)" 
+					srcset="./assets/comics/comic2-small.png 1x,
+					./assets/comics/comic2-small-2x.png 2x," 
+					width='201' height='311'/>
+          <img src='./assets/comics/comic2.png' width='283' height='438' alt="comic 2 cover" />
+        </picture>
+      </a>
+      <a class="cover cover3" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">
+        <picture>
+          <source
+          media="(min-width: 58rem)" 
+					srcset="./assets/comics/comic3.png 1x,
+					./assets/comics/comic3-2x.png 2x," 
+					width='341' height='438'/>
+          <source
+          media="(max-width: 35.5rem)" 
+					srcset="./assets/comics/comic3-mobile.png 1x,
+          ./assets/comics/comic3-mobile-2x.png 2x"
+					width='188' height='241'/>
+          <source
+          media="(max-width: 58rem)" 
+					srcset="./assets/comics/comic3-small.png 1x,
+					./assets/comics/comic3-small-2x.png 2x," 
+					width='242' height='311'/>
+          <img src='./assets/comics/comic3.png' width='341' height='438' alt="comic 3 cover" />
+        </picture>
+      </a>
+    </div>
+
+    <h2 class="main-text past-text">Past comic books</h2>
+    <div>
+      <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">[#1]</a>&nbsp;
+      <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">[#2]</a>&nbsp;
+      <a class="link" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">[#3]</a>
+    </div>
+
+    <div class="coupon">
+      <p class="secondary-text">Get a free copy by using<br/>
+        the coupon code MCON_2
+      </p>
+      <a class="link" href="https://store.gitcoin.co/discount/MCON_2">[Store]</a>
+    </div>
+    <div class="coming-soon">
+      <picture>
+        <source
+          srcset="./assets/comics/comic4.png 1x,
+          ./assets/comics/comic4-2x.png 2x," 
+        width='1440' height='787'/>
+        <img src='./assets/comics/comic4.png' width='1440' height='787' alt="comic 4 cover" />
+      </picture>
+      <div class="coming-soon-text">
+        <p class="main-text">Coming soon</p>
+        <p class="main-text">#4</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <div>
-    <a class="link" href="https://drive.google.com/drive/folders/1__K_tTmJViz0ukN8dE9GmuXErsxrlOQO">
-      Fork this book
-    </a>
-    </div>
-    <p>Fund the pluriverse.wtf &nbsp;&nbsp;
-      <a class="link" href="https://gitcoin.co/grants/7369/a-dao-for-the-pluriverse">
-        [Grants]</a>
-      &nbsp;
-      <a class="link" href="https://yeet.daohaus.club/dao/0x64/0x06b109353f6f2b5c028b9493f0787127bc6e1560/1">
-        [Y33T]
+    <div class="footer-container">
+      <div>
+      <a class="link" href="https://drive.google.com/drive/folders/1__K_tTmJViz0ukN8dE9GmuXErsxrlOQO">
+        Fork this book
       </a>
-    </p>
+      </div>
+      <p>Fund the pluriverse.wtf &nbsp;&nbsp;
+        <a class="link" href="https://gitcoin.co/grants/7369/a-dao-for-the-pluriverse">
+          [Grants]</a>
+        &nbsp;
+        <a class="link" href="https://yeet.daohaus.club/dao/0x64/0x06b109353f6f2b5c028b9493f0787127bc6e1560/1">
+          [Y33T]
+        </a>
+      </p>
+    </div>
   </footer>
 
 	<script>
@@ -143,5 +234,103 @@
 			layer2.style.transform = `translateX(${x2}px) translateY(${y2}px)`;
 		}
 	</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  
+  <script>
+    // hero
+    gsap.to('h1', {
+      scrollTrigger: {
+        scrub: true
+      }, 
+      yPercent: -30,
+      opacity: 0.5,
+
+    });
+    gsap.to('.hero-content', {
+      scrollTrigger: {
+        scrub: true,
+        end: "bottom 90%"
+      }, 
+      yPercent: -25,
+      color: '#F4E5C9'
+    });
+    
+    gsap.to('.coming-soon-text', {
+      scrollTrigger: {
+        scrub: true,
+        start: 'center 1%',
+      }, 
+      yPercent: -40,
+      opacity: 0.8,
+    });
+
+    gsap.to('.past-text', {
+      scrollTrigger: {
+        scrub: true,
+      }, 
+      y: -70,
+      opacity: 0.7,
+    });
+
+    gsap.to('.coupon .secondary-text', {
+      scrollTrigger: {
+        scrub: true,
+        start: 'center center',
+        end: 'bottom 100%'
+      },
+      color: '#F4E5C9'
+    });
+
+    // covers
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 35.5rem)", () => {
+      gsap.to('.cover1', {
+        scrollTrigger: {
+          scrub: true,
+          start: "top 50%",
+          end: 'center center'
+        }, 
+        x: 120,
+        y: 30,
+        rotation: -15
+      });
+      gsap.to('.cover3', {
+        scrollTrigger: {
+          scrub: true,
+          start: "top 50%",
+          end: 'center center'
+        }, 
+        x: -130,
+        y: 30,
+        rotation: 15
+      });
+    });
+
+    mm.add("(max-width: 35.5rem)", () => {
+      gsap.to('.cover1', {
+        scrollTrigger: {
+          scrub: true,
+          start: "top 50%",
+          end: 'bottom 70%'
+        }, 
+        x: 100,
+        y: 10,
+        rotation: -15
+      });
+      gsap.to('.cover3', {
+        scrollTrigger: {
+          scrub: true,
+          start: "top 50%",
+          end: 'bottom 70%'
+        }, 
+        x: -110,
+        y: 10,
+        rotation: 15
+      });
+    });
+
+  </script>
 </body>
 </html>
