@@ -98,8 +98,8 @@ h2,
 
 .wtf{
   text-align: center;
-  max-width: 90%;
-  margin: 0% 5%;
+  max-width: 50%;
+  margin: 0% 26%;
 }
 .wtf h2{
   padding-bottom: 1rem;
@@ -248,7 +248,13 @@ footer {
     flex-direction: column;
     gap: 0.3rem;
   }
+  .wtf{
+    text-align: center;
+    max-width: 80%;
+    margin: 0% 10%;
+  }
 }
+
 
 /* fonts */
 @media only screen and (max-width: 50rem) {
