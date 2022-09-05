@@ -104,29 +104,6 @@
     });
   });
 
-  mm.add("(max-width: 35.5rem)", () => {
-    gsap.to('.cover1', {
-      scrollTrigger: {
-        trigger: '.cover1',
-        scrub: true,
-        end: 'bottom 70%'
-      }, 
-      x: 100,
-      y: 10,
-      rotation: -15
-    });
-    gsap.to('.cover3', {
-      scrollTrigger: {
-        trigger: '.cover3',
-        scrub: true,
-        end: 'bottom 70%'
-      }, 
-      x: -110,
-      y: 10,
-      rotation: 15
-    });
-  });
-
 // comics covers links
   const cover1 = document.querySelector('.cover1 img');
   const cover2 = document.querySelector('.cover2 img');

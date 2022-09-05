@@ -323,6 +323,14 @@ section {
   padding-bottom: 3.5rem;
 }
 
+@media only screen and (max-width: 35.5rem) {
+  .cover1 {
+    transform: translate(100px, 10px) rotate(-15deg);
+  }
+  .cover3 {
+    transform: translate(-110px, 10px) rotate(15deg);
+  }
+}
 /* coming soon comic 4 */
 .coming-soon {
   position: relative;
