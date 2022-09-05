@@ -75,11 +75,16 @@
 				<source media="(min-width: 58rem)" srcset="./assets/3.png" width='2000' height='1243' />
 				<img class="layer-3" src="./assets/3.png" alt="" width='2000' height='1243' />
 			</picture>
+      <picture>
+				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
+				<source media="(min-width: 58rem)" srcset="./assets/4.png" width='2000' height='1243' />
+				<img class="layer-4" src="./assets/4.png" alt="" width='1440' height='869' />
+			</picture>
 		</div>
 
 		<div class="hero-container">
 			<div class="hero-content">
-				<h1>Step into the<br/>Pluriverse</h1>
+				<h1 class="main-text">Step into the<br/>Pluriverse</h1>
 				<p>
 					Read the guide &nbsp;
 					<a class="link" href="/pdf/pluriverse-guide.pdf">[PDF]</a>&nbsp;&nbsp;
@@ -112,37 +117,18 @@
 	</div>
 
   <section class="wtf">
-
-				<h2>WTF is the<br/>Pluriverse Guide?</h2>
-				<p>
-					An invitation to dream wildy together. 			
-					<li>
-					 a schelling point for the creation of Pluriversal culture. 		
-					</li>
-					<li>
-					an invitation to exchange stories, ideas, and designs.  
-					</li>
-          <li>
-          a challenge to the vision of Stephenson's metaverse.
-          </li>
-          <li>
-          a challenge to the vision of Zuck's metaverse.
-          </li>
-          <li>
-          a challenge to build a bottoms-up vision of many metaverses.
-          </li>
-          <li>
-            an place to intentionally-future a p2p metaverse, bottoms up, by & for the pluriversal people.
-          </li>
-					<li>
-					 a place to discuss public goods, Moloch, solarpunk, coordination, cypherpunk, terrapunk, lunarpunk, regenpunk, & a plurality of many value systems.  
-					</li>
-					<li>
-						a place to fund, create, & distribute pluriversal media.
-					</li>
-
-					 
-				</p>
+    <h2 class="main-text">WTF is the<br/>Pluriverse Guide?</h2>
+    <p class="description">An invitation to dream wildly together</p>
+    <div class="cards">
+      <div class="card"><p>An invitation to exchange stories, ideas and designs.</p></div>
+      <div class="card"><p>A schelling point for the creation of Pluriversal culture.</p></div>
+      <div class="card"><p>A challenge to the vision of Stephenson's metaverse.</p></div>
+      <div class="card"><p>A challenge to the vision of Zuck’s metaverse.</p></div>
+      <div class="card"><p>A challenge to build a bottoms-up vision of many metaverses.</p></div>
+      <div class="card"><p>A place to intentionally-future a p2p metaverse, bottoms up, by & for the pluriversal people.</p></div>
+      <div class="card"><p>A place to discuss public goods, coordination, Moloch, solarpunk, cypherpunk, & many value systems.</p></div>
+      <div class="card"><p>A place to fund, create, & distribute pluriversal media.</p></div>
+    </div>
   </section>
 
   <section class="past-comics">
@@ -211,9 +197,9 @@
 
     <h2 class="main-text past-text">Past Releases</h2>
     <div class="past-text-links">
-      <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">[#1]</a>&nbsp;
-      <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">[#2]</a>&nbsp;
-      <a class="link" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">[#3]</a>
+      <a class="link comic1link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">[#1]</a>&nbsp;
+      <a class="link comic2link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">[#2]</a>&nbsp;
+      <a class="link comic3link" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">[#3]</a>
     </div>
 
     <div class="coupon">
@@ -222,14 +208,27 @@
       </p>
       <a class="link" href="https://store.gitcoin.co/discount/MCON_2">[Store]</a>
     </div>
+    
     <div class="coming-soon">
       <picture>
         <source
-          srcset="./assets/comics/comic4.png 1x,
-          ./assets/comics/comic4-2x.png 2x," 
-        width='1440' height='787'/>
-        <img src='./assets/comics/comic4.png' width='1440' height='787' alt="comic 4 cover" />
+          media="(min-width: 71.2rem)" 
+					srcset="./assets/comics/comic4.png 1x,
+					./assets/comics/comic4-2x.png 2x," 
+					width='1104' height='604'/>
+        <source
+          media="(max-width: 45rem)" 
+          srcset="./assets/comics/comic4-small.png 1x,
+          ./assets/comics/comic4-small-2x.png 2x," 
+					width='350' height='192' />
+        <source
+          media="(max-width: 71.2rem)" 
+          srcset="./assets/comics/comic4-medium.png 1x,
+					./assets/comics/comic4-medium-2x.png 2x," 
+          width='700' height='383'/>
+        <img src='./assets/comics/comic4.png' width='1104' height='604' alt="comic 4 cover" />
       </picture>
+
       <div class="coming-soon-text">
         <p class="main-text">Coming soon</p>
         <p class="main-text">#4</p>
@@ -292,17 +291,35 @@
       yPercent: -25,
       color: '#F4E5C9'
     });
-    
-    gsap.to('.coming-soon-text', {
+
+    // wtf
+    gsap.to('.wtf h2', {
       scrollTrigger: {
+        trigger: '.wtf h2',
         scrub: true,
-        start: 'center 1%',
       }, 
-      yPercent: -40,
-      opacity: 0.8,
+      yPercent: -35
+    });
+    gsap.to('.wtf .description', {
+      scrollTrigger: {
+        trigger: '.wtf .description',
+        scrub: true,
+      }, 
+      yPercent: 45,
+      color: '#FF9658'
     });
 
     // past comics
+    gsap.to('.coming-soon-text', {
+      scrollTrigger: {
+        trigger: '.coming-soon',
+        scrub: true,
+        end: 'center center'
+      }, 
+      yPercent: -130,
+      opacity: 1,
+    });
+
     gsap.to('.past-text, .past-text-links', {
       scrollTrigger: {
         trigger: '.past-text',
@@ -368,7 +385,24 @@
         rotation: 15
       });
     });
+  </script>
 
+  <script>
+    const cover1 = document.querySelector('.cover1 img');
+    const cover2 = document.querySelector('.cover2 img');
+    const cover3 = document.querySelector('.cover3 img');
+    const link1 = document.querySelector('.comic1link');
+    const link2 = document.querySelector('.comic2link');
+    const link3 = document.querySelector('.comic3link');
+    const scaleUp = element => element.style.transform = 'scale(1.1)';
+    const scaleDown = element => element.style.transform = 'scale(1)';
+
+    link1.onmouseenter = () => scaleUp(cover1);
+    link1.onmouseleave = () => scaleDown(cover1);
+    link2.onmouseenter = () => scaleUp(cover2);
+    link2.onmouseleave = () => scaleDown(cover2);
+    link3.onmouseenter = () => scaleUp(cover3);
+    link3.onmouseleave = () => scaleDown(cover3);
   </script>
 </body>
 </html>
