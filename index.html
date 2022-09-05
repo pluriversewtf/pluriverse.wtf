@@ -26,9 +26,10 @@
 	<link rel="preload" as="image" href="./assets/1.png">
 	<link rel="preload" as="image" href="./assets/2.png">
 	<link rel="preload" as="image" href="./assets/3.png">
+  <link rel="preload" as="image" href="./assets/4.png">
 	<link rel="preload" as="image" href="./assets/mobile-bg.png">
 	<link rel="preload" as="image" href="./assets/front-cover-320.jpg">
-	<link rel="preload" as="image" href="./assets/front-cover-426.jpg">
+	<link rel="preload" as="image" href="./assets/front-cover-426-2x.jpg">
 
 	<!-- twitter cards & og -->
 	<meta name="twitter:domain" content="pluriverse.wtf" />
@@ -110,7 +111,7 @@
 					srcset="./assets/front-cover-426.jpg 1x,
 					./assets/front-cover-426-2x.jpg 2x," 
 					width='426' height='538'/>
-					<img class="logo" src='./assets/mobile-cover.jpg' width='426' height='538' alt="a guide to the pluriverse" />
+					<img class="logo" src='./assets/front-cover-320.jpg' width='320' height='403' alt="a guide to the pluriverse" />
 				</picture>
 			</a>
 		</div>
@@ -120,14 +121,14 @@
     <h2 class="main-text">WTF is the<br/>Pluriverse Guide?</h2>
     <p class="description">An invitation to dream wildly together</p>
     <div class="cards">
-      <div class="card"><p>An invitation to exchange stories, ideas and designs.</p></div>
-      <div class="card"><p>A schelling point for the creation of Pluriversal culture.</p></div>
-      <div class="card"><p>A challenge to the vision of Stephenson's metaverse.</p></div>
-      <div class="card"><p>A challenge to the vision of Zuck’s metaverse.</p></div>
-      <div class="card"><p>A challenge to build a bottoms-up vision of many metaverses.</p></div>
-      <div class="card"><p>A place to intentionally-future a p2p metaverse, bottoms up, by & for the pluriversal people.</p></div>
-      <div class="card"><p>A place to discuss public goods, coordination, Moloch, solarpunk, cypherpunk, & many value systems.</p></div>
-      <div class="card"><p>A place to fund, create, & distribute pluriversal media.</p></div>
+      <div class="card-container"><div class="card"><p>An invitation to exchange stories, ideas and designs.</p></div></div>
+      <div class="card-container"><div class="card"><p>A schelling point for the creation of Pluriversal culture.</p></div></div>
+      <div class="card-container"><div class="card"><p>A challenge to the vision of Stephenson's metaverse.</p></div></div>
+      <div class="card-container"><div class="card"><p>A challenge to the vision of Zuck’s metaverse.</p></div></div>
+      <div class="card-container"><div class="card"><p>A challenge to build a bottoms-up vision of many metaverses.</p></div></div>
+      <div class="card-container"><div class="card"><p>A place to intentionally-future a p2p metaverse, bottoms up, by & for the pluriversal people.</p></div></div>
+      <div class="card-container"><div class="card"><p>A place to discuss public goods, coordination, Moloch, solarpunk, cypherpunk, & many value systems.</p></div></div>
+      <div class="card-container"><div class="card"><p>A place to fund, create, & distribute pluriversal media.</p></div></div> </div>
     </div>
   </section>
 
@@ -150,7 +151,7 @@
 					srcset="./assets/comics/comic1-small.png 1x,
 					./assets/comics/comic1-small-2x.png 2x," 
 					width='201' height='309'/>
-          <img src='./assets/comics/comic1.png' width='285' height='438' alt="comic 1 cover" />
+          <img src='./assets/comics/comic1.png' loading="lazy" width='285' height='438' alt="comic 1 cover" />
         </picture>
       </a>
       <a class="cover cover2" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">
@@ -170,7 +171,7 @@
 					srcset="./assets/comics/comic2-small.png 1x,
 					./assets/comics/comic2-small-2x.png 2x," 
 					width='201' height='311'/>
-          <img src='./assets/comics/comic2.png' width='283' height='438' alt="comic 2 cover" />
+          <img src='./assets/comics/comic2.png' loading="lazy" width='283' height='438' alt="comic 2 cover" />
         </picture>
       </a>
       <a class="cover cover3" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">
@@ -190,7 +191,7 @@
 					srcset="./assets/comics/comic3-small.png 1x,
 					./assets/comics/comic3-small-2x.png 2x," 
 					width='242' height='311'/>
-          <img src='./assets/comics/comic3.png' width='341' height='438' alt="comic 3 cover" />
+          <img src='./assets/comics/comic3.png' loading="lazy" width='341' height='438' alt="comic 3 cover" />
         </picture>
       </a>
     </div>
@@ -226,7 +227,7 @@
           srcset="./assets/comics/comic4-medium.png 1x,
 					./assets/comics/comic4-medium-2x.png 2x," 
           width='700' height='383'/>
-        <img src='./assets/comics/comic4.png' width='1104' height='604' alt="comic 4 cover" />
+        <img src='./assets/comics/comic4.png' loading="lazy" width='1104' height='604' alt="comic 4 cover" />
       </picture>
 
       <div class="coming-soon-text">
@@ -251,158 +252,24 @@
           [Y33T]
         </a>
       </p>
+      
+      <div class="footer-icons">
+        <a href="https://twitter.com/pluriversewtf" target="_blank" rel="noreferrer">
+          <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.7878 2.12422C21.9679 2.48447 21.0859 2.73292 20.1542 2.84472C21.0983 2.28571 21.8312 1.37888 22.1791 0.322981C21.2971 0.84472 20.3157 1.22981 19.2598 1.42857C18.4275 0.546584 17.235 0 15.9182 0C13.384 0 11.3344 2.03727 11.3344 4.54658C11.3344 4.90683 11.3716 5.24224 11.4586 5.59006C7.64491 5.40373 4.26603 3.59006 2.00516 0.832298C1.60764 1.50311 1.38404 2.28571 1.38404 3.11801C1.38404 4.69565 2.19149 6.08696 3.42131 6.90683C2.66354 6.88199 1.95547 6.67081 1.34677 6.3354V6.38509C1.34677 8.59627 2.92441 10.4224 5.02379 10.8447C4.6387 10.9441 4.24118 11.0062 3.81882 11.0062C3.52069 11.0062 3.23497 10.9689 2.94926 10.9193C3.53311 12.7205 5.22255 14.0373 7.23497 14.0745C5.66975 15.2919 3.68218 16.0248 1.53311 16.0248C1.16044 16.0248 0.80019 16 0.439941 15.9627C2.47721 17.2547 4.88715 18 7.471 18C15.9058 18 20.5269 11.0683 20.5269 5.0559C20.5269 4.85714 20.5269 4.65838 20.5145 4.47205C21.4213 3.83851 22.1915 3.03106 22.8002 2.1118" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://github.com/web3event-co/pluriverse.wtf" target="_blank" rel="noreferrer">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0C5.14641 0 0 5.14641 0 11.5C0 16.5829 3.29681 20.8892 7.86433 22.4141C8.43616 22.52 8.64794 22.167 8.64794 21.8564C8.64794 21.581 8.64088 20.861 8.63382 19.9009C5.43585 20.5927 4.75813 18.3619 4.75813 18.3619C4.23573 17.0347 3.48036 16.6817 3.48036 16.6817C2.43554 15.9687 3.55801 15.9828 3.55801 15.9828C4.70872 16.0675 5.3229 17.1688 5.3229 17.1688C6.34653 18.9266 8.01258 18.4184 8.66912 18.1219C8.77501 17.3806 9.07152 16.8723 9.39626 16.5829C6.8407 16.2934 4.15807 15.3051 4.15807 10.8999C4.15807 9.64334 4.60282 8.6197 5.34408 7.81492C5.22406 7.52548 4.82873 6.35359 5.45703 4.77225C5.45703 4.77225 6.42419 4.46163 8.61971 5.9512C9.53745 5.69705 10.5187 5.56998 11.5 5.56292C12.4742 5.56292 13.4626 5.69705 14.3803 5.9512C16.5758 4.46163 17.543 4.77225 17.543 4.77225C18.1713 6.35359 17.7759 7.52548 17.6559 7.81492C18.3901 8.6197 18.8349 9.64334 18.8349 10.8999C18.8349 15.3192 16.1452 16.2864 13.5826 16.5758C13.992 16.9288 14.3662 17.6347 14.3662 18.7078C14.3662 20.2468 14.3521 21.4822 14.3521 21.8634C14.3521 22.174 14.5568 22.527 15.1427 22.4141C19.7103 20.8892 23 16.5829 23 11.5071C23 5.14641 17.8536 0 11.5 0Z" fill="currentColor"/>
+          </svg>
+        </a>
+    </div>
     </div>
   </footer>
 
-	<script>
-		document.addEventListener("mousemove", parallax);
-		function parallax(event) {
-			const layer1 = document.querySelector(".layer-1");
-			const layer2 = document.querySelector(".layer-2");
-			const position = 7;
-			const x1 = (window.innerWidth - event.pageX * position) / 90;
-			const y1 = (window.innerHeight - event.pageY * position) / 90;
-			layer1.style.transform = `translateX(${x1}px) translateY(${y1}px)`;
-
-			const x2 = (window.innerWidth - event.pageX * 12) / 90;
-			const y2 = (window.innerHeight - event.pageY * 12) / 90;
-			layer2.style.transform = `translateX(${x2}px) translateY(${y2}px)`;
-		}
-	</script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-  
-  <script>
-    // hero
-    gsap.to('h1', {
-      scrollTrigger: {
-        scrub: true
-      }, 
-      yPercent: -30,
-      opacity: 0.5,
-
-    });
-    gsap.to('.hero-content', {
-      scrollTrigger: {
-        scrub: true,
-        end: "bottom 90%"
-      }, 
-      yPercent: -25,
-      color: '#F4E5C9'
-    });
-
-    // wtf
-    gsap.to('.wtf h2', {
-      scrollTrigger: {
-        trigger: '.wtf h2',
-        scrub: true,
-      }, 
-      yPercent: -35
-    });
-    gsap.to('.wtf .description', {
-      scrollTrigger: {
-        trigger: '.wtf .description',
-        scrub: true,
-      }, 
-      yPercent: 45,
-      color: '#FF9658'
-    });
-
-    // past comics
-    gsap.to('.coming-soon-text', {
-      scrollTrigger: {
-        trigger: '.coming-soon',
-        scrub: true,
-        end: 'center center'
-      }, 
-      yPercent: -130,
-      opacity: 1,
-    });
-
-    gsap.to('.past-text, .past-text-links', {
-      scrollTrigger: {
-        trigger: '.past-text',
-        scrub: true,
-      }, 
-      y: -70,
-      opacity: 0.7,
-    });
-
-    gsap.to('.coupon .secondary-text', {
-      scrollTrigger: {
-        trigger: '.coupon .secondary-text',
-        scrub: true,
-        start: 'center 40%',
-      },
-      color: '#F4E5C9'
-    });
-
-    // covers
-    let mm = gsap.matchMedia();
-    mm.add("(min-width: 35.5rem)", () => {
-      gsap.to('.cover1', {
-        scrollTrigger: {
-          trigger: '.cover1',
-          scrub: true,
-          end: 'center center',
-        }, 
-        x: 120,
-        y: 30,
-        rotation: -15
-      });
-      gsap.to('.cover3', {
-        scrollTrigger: {
-          trigger: '.cover3',
-          scrub: true,
-          end: 'center center'
-        }, 
-        x: -130,
-        y: 30,
-        rotation: 15
-      });
-    });
-
-    mm.add("(max-width: 35.5rem)", () => {
-      gsap.to('.cover1', {
-        scrollTrigger: {
-          trigger: '.cover1',
-          scrub: true,
-          end: 'bottom 70%'
-        }, 
-        x: 100,
-        y: 10,
-        rotation: -15
-      });
-      gsap.to('.cover3', {
-        scrollTrigger: {
-          trigger: '.cover3',
-          scrub: true,
-          end: 'bottom 70%'
-        }, 
-        x: -110,
-        y: 10,
-        rotation: 15
-      });
-    });
-  </script>
-
-  <script>
-    const cover1 = document.querySelector('.cover1 img');
-    const cover2 = document.querySelector('.cover2 img');
-    const cover3 = document.querySelector('.cover3 img');
-    const link1 = document.querySelector('.comic1link');
-    const link2 = document.querySelector('.comic2link');
-    const link3 = document.querySelector('.comic3link');
-    const scaleUp = element => element.style.transform = 'scale(1.1)';
-    const scaleDown = element => element.style.transform = 'scale(1)';
-
-    link1.onmouseenter = () => scaleUp(cover1);
-    link1.onmouseleave = () => scaleDown(cover1);
-    link2.onmouseenter = () => scaleUp(cover2);
-    link2.onmouseleave = () => scaleDown(cover2);
-    link3.onmouseenter = () => scaleUp(cover3);
-    link3.onmouseleave = () => scaleDown(cover3);
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
