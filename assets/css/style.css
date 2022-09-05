@@ -211,67 +211,79 @@ section {
   }
 
   .card {
-    border: 1px solid var(--orange-color);
-    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15.6rem;
     height: 21.9rem;
     background-position: center;
+    background-size: auto;
     background-repeat: no-repeat;
+  }
+  .card-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.6rem;
+    height: 21.9rem;
     transition: all 0.3s ease-out;
+    overflow: hidden;
+    border: 1px solid var(--orange-color);
+    border-radius: 16px;
   }
-  .card:hover {
-    border-radius: 50%;
-  }
+
   .card p {
     font-size: 1rem;
     line-height: 170%;
     margin: 1.7rem;
   }
   
-.card:nth-of-type(1) {
+.card-container:nth-of-type(1) .card {
   background-image: url('../about-bg-1.svg');
 }
-.card:nth-of-type(2) {
+.card-container:nth-of-type(2) .card {
   background-image: url('../about-bg-2.svg');
 }
-.card:nth-of-type(3) {
+.card-container:nth-of-type(3) .card {
   background-image: url('../about-bg-3.svg');
 }
-.card:nth-of-type(4) {
+.card-container:nth-of-type(4) .card {
   background-image: url('../about-bg-4.svg');
 }
-.card:nth-of-type(5) {
+.card-container:nth-of-type(5) .card {
   background-image: url('../about-bg-5.svg');
 }
-.card:nth-of-type(6) {
+.card-container:nth-of-type(6) .card {
   background-image: url('../about-bg-6.svg');
 }
-.card:nth-of-type(7) {
+.card-container:nth-of-type(7) .card {
   background-image: url('../about-bg-7.svg');
 }
-.card:nth-of-type(7) p {
+.card-container:nth-of-type(7) .card p {
   margin: 0.5rem;
 }
-.card:nth-of-type(8) {
+.card-container:nth-of-type(8) .card {
   background-image: url('../about-bg-8.svg');
 }
+
 @media only screen and (min-width: 75rem) {
-  .card:hover {
+  .card-container:hover {
     height: 15.6rem;
+    border-radius: 50%;
   }
 }
 
 @media only screen and (max-width: 75rem) {
-  .card {
+  .card,
+  .card-container {
     width: 13.6rem;
     height: 18.9rem;
   }
 }
 @media only screen and (max-width: 51rem) {
-  .card {
+  .card,
+  .card-container {
     width: 9rem;
     height: 13rem;
   }
