@@ -210,7 +210,7 @@
     </div>
 
     <h2 class="main-text past-text">Past Releases</h2>
-    <div>
+    <div class="past-text-links">
       <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">[#1]</a>&nbsp;
       <a class="link" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-2-digital-edition">[#2]</a>&nbsp;
       <a class="link" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition">[#3]</a>
@@ -241,7 +241,7 @@
     <div class="footer-container">
       <div>
       <a class="link" href="https://drive.google.com/drive/folders/1__K_tTmJViz0ukN8dE9GmuXErsxrlOQO">
-        Fork this book
+        [Fork this book]
       </a>
       </div>
       <p>Fund the pluriverse.wtf &nbsp;&nbsp;
@@ -302,8 +302,10 @@
       opacity: 0.8,
     });
 
-    gsap.to('.past-text', {
+    // past comics
+    gsap.to('.past-text, .past-text-links', {
       scrollTrigger: {
+        trigger: '.past-text',
         scrub: true,
       }, 
       y: -70,
@@ -312,9 +314,9 @@
 
     gsap.to('.coupon .secondary-text', {
       scrollTrigger: {
+        trigger: '.coupon .secondary-text',
         scrub: true,
-        start: 'center center',
-        end: 'bottom 100%'
+        start: 'center 40%',
       },
       color: '#F4E5C9'
     });
@@ -324,9 +326,9 @@
     mm.add("(min-width: 35.5rem)", () => {
       gsap.to('.cover1', {
         scrollTrigger: {
+          trigger: '.cover1',
           scrub: true,
-          start: "top 50%",
-          end: 'center center'
+          end: 'center center',
         }, 
         x: 120,
         y: 30,
@@ -334,8 +336,8 @@
       });
       gsap.to('.cover3', {
         scrollTrigger: {
+          trigger: '.cover3',
           scrub: true,
-          start: "top 50%",
           end: 'center center'
         }, 
         x: -130,
@@ -347,8 +349,8 @@
     mm.add("(max-width: 35.5rem)", () => {
       gsap.to('.cover1', {
         scrollTrigger: {
+          trigger: '.cover1',
           scrub: true,
-          start: "top 50%",
           end: 'bottom 70%'
         }, 
         x: 100,
@@ -357,8 +359,8 @@
       });
       gsap.to('.cover3', {
         scrollTrigger: {
+          trigger: '.cover3',
           scrub: true,
-          start: "top 50%",
           end: 'bottom 70%'
         }, 
         x: -110,

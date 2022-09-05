@@ -8,9 +8,16 @@
   font-display: swap;
 }
 
+:root {
+  --green-color: #51C3A6;
+  --white-color: #F4E5C9;
+  --orange-color: #FF9658;
+  --dark-color: #2D2038;
+}
+
 body {
-  background-color: #2D2038;
-  color: #F4E5C9;
+  background-color: var(--dark-color);
+  color: var(--white-color);
   font-family: 'Avara';
   font-weight: 700;
   font-size: 1.5rem;
@@ -27,18 +34,18 @@ img {
 h1,
 h2,
 .main-text {
-  color: #FF9658;
+  color: var(--orange-color);
   font-size: 3.75rem;
   line-height: 120%;
 }
 .secondary-text {
   font-size: 1.5rem;
-  color: #FF9658;
+  color: var(--orange-color);
   line-height: 150%;
 }
 
 .link {
-  color: #F4E5C9;
+  color: var(--white-color);
   transition: color 0.3s ease-out;
   text-decoration: none;
   position: relative;
@@ -54,11 +61,14 @@ h2,
   bottom: -70%;
   transition: width 0.3s ease-out;
 }
+footer .link::after {
+  bottom: -90%;
+}
 .link:hover::after {
   width: 100%;
 }
 .link:hover {
-  color: #51C3A6;
+  color: var(--green-color);
 }
 
 /* scrollbar */
@@ -71,7 +81,7 @@ h2,
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2D2038 url('../scroll-bg.png') repeat left;
+  background: var(--dark-color) url('../scroll-bg.png') repeat left;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -109,7 +119,7 @@ h2,
 }
 
 .hero-content {
-  color: #FF9658;
+  color: var(--orange-color);
   padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -203,7 +213,7 @@ section {
 }
 
 .coupon {
-  padding-block: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 /* coming soon comic 4 */
