@@ -346,15 +346,31 @@ footer {
   align-items: center;
 }
 
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  line-height: 1;
+}
+
+.footer-icons svg {
+  color: var(--white-color);
+  transition: color 0.4s ease-out;
+}
+.footer-icons svg:hover {
+  color: var(--green-color);
+}
+
 @media only screen and (max-width: 50rem) {
   .footer-container {
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1rem;
   }
 }
 
 
-/* fonts */
+/* fonts 
+ ========*/
 @media only screen and (max-width: 71.2rem) { /* 1140px */
   .coming-soon-text .main-text {
     font-size: 2.3rem;
