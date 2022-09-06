@@ -28,10 +28,6 @@ body {
   max-width: 100vw;
 }
 
-img {
-  border-radius: 8px;
-}
-
 h1,
 h2,
 .main-text {
@@ -84,15 +80,12 @@ footer .link::after {
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: rgb(141, 134, 148);
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--dark-color) url('../scroll-bg.png') repeat left;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #2d2038de url('../scroll-bg.png') repeat left;
 }
@@ -126,17 +119,56 @@ h1 {
   margin-bottom: 3rem;
 }
 
+.book {
+  perspective: 3000px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s ease-in-out;
+}
+
+.book:hover {
+  transform: rotate3d(0,1,0,35deg) scale(1.1);
+}
+.book:hover .filter {
+  opacity: 0;
+}
+
+.front {
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transition: transform .5s ease-in-out;
+  transform: translate3d(0,0,20px);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  transform: rotate3d(0,1,0,-90deg);
+}
+
+.filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 15px;
+  background-color: var(--dark-color);
+  z-index: -1;
+  filter: drop-shadow(0px 0px 9px #FF6002);
+  box-shadow: inset 0px 0px 8px #FF6002;
+  transition: opacity 0.4s ease-out;
+}
+
 .logo {
   height: auto;
-  transition: transform 0.5s cubic-bezier(0.22,0.61,0.36,1);
-}
-.logo:hover {
-  transform: scale(1.1);
+  /* transition: transform 0.5s cubic-bezier(0.22,0.61,0.36,1); */
 }
 
 .background,
 .background img {
   position: absolute;
+  width: 23px;
   top: -1%;
   left: -2%;
   right: 0;
@@ -145,21 +177,13 @@ h1 {
   width: 130vw;
   height: auto;
   z-index: -2;
-  /* overflow: hidden; */
 }
 .background .layer-4 {
-  /* max-height: 102vh; */
   mix-blend-mode: luminosity;
   opacity: 0.5;
 }
 
 @media only screen and (max-width: 58rem) {
-  /* body {
-    background-image: url('../mobile-bg.png');
-    background-position: center;
-    background-repeat: repeat;
-    background-size: auto;
-  } */
   .hero {
     background-image: url('../mobile-hero-bg.png');
     background-position: center;
