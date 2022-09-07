@@ -119,50 +119,89 @@ h1 {
   margin-bottom: 3rem;
 }
 
+/* logo hover effect */
 .book {
-  perspective: 3000px;
   position: relative;
-  transform-style: preserve-3d;
-  transition: transform .5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-
 .book:hover {
-  transform: rotate3d(0,1,0,35deg) scale(1.1);
-}
-.book:hover .filter {
-  opacity: 0;
+  transform: scale(1.1);
 }
 
-.front {
-  transform-style: preserve-3d;
-  transform-origin: 0% 50%;
-  transition: transform .5s ease-in-out;
-  transform: translate3d(0,0,20px);
-}
-
-.left {
+.border {
+  overflow: hidden;
   position: absolute;
-  top: 0;
-  left: -12px;
-  transform: rotate3d(0,1,0,-90deg);
+  left:-1%;
+  right: -1%;
+  top: -1.5%;
+  bottom: 2%;
+}
+.border > * {
+  position: absolute;
 }
 
-.filter {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 15px;
-  background-color: var(--dark-color);
-  z-index: -1;
-  filter: drop-shadow(0px 0px 9px #FF6002);
-  box-shadow: inset 0px 0px 8px #FF6002;
-  transition: opacity 0.4s ease-out;
+.border-left {
+  left: -0%;
+  top: -100%;
+  /* mouseout delay */
+  transition: all 0.2s ease-in-out 0.3s;
 }
+.book:hover .border-left {
+  /* mousenter delay */
+  transition: all 0.1s ease-in-out 0s;
+}
+.border-bottom {
+  left: -100%;
+  bottom: 0;
+  transition: all 0.1s ease-in-out 0.2s;
+}
+.book:hover .border-bottom {
+  transition: all 0.1s ease-in-out 0.1s;
+}
+.border-right {
+  right: -2%;
+  bottom: -100%;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+.book:hover .border-right {
+  transition: all 0.1s ease-in-out 0.2s;
+}
+.border-top {
+  right: -100%;
+  top: 0%;
+  transition: all 0.1s ease-in-out 0s;
+}
+.book:hover .border-top {
+  transition: all 0.1s ease-in-out 0.3s;
+}
+
+.book:hover .border-left {
+  top: 1.5%;
+}
+.book:hover .border-bottom {
+  left: 1%;
+}
+.book:hover .border-right {
+  bottom: 0%;
+}
+.book:hover .border-top {
+  right: 1%;
+}
+
+@media only screen and (max-width: 80rem) {
+  .border-top,
+  .border-bottom {
+    width: 320px;
+  }
+  .border-left,
+  .border-right {
+    height: 403px;
+  }
+}
+/*  */
 
 .logo {
   height: auto;
-  /* transition: transform 0.5s cubic-bezier(0.22,0.61,0.36,1); */
 }
 
 .background,
