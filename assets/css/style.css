@@ -54,6 +54,7 @@ h2,
   transition: color 0.3s ease-out;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .link::after {
@@ -409,6 +410,52 @@ section {
 }
 .coming-soon .main-text {
   padding-bottom: 1rem;
+}
+
+/* projects */
+.projects h2 {
+  text-align: center;
+}
+.projects-container {
+  border: 1px solid var(--orange-color);
+  border-radius: 16px;
+  max-width: min(42rem, 75%);
+  margin: 4rem auto;
+  padding: 3.5%;
+}
+.greenpill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.project-content a {
+  line-height: 1.1;
+  width: fit-content;
+}
+
+.orange-star,
+.green-star {
+  transition: transform 1s ease-in-out;
+  transform-origin: 50% 50%;
+}
+.green-star {
+  transition: transform 1.3s ease-in-out;
+}
+.greenpill:hover .orange-star,
+.project-content:hover +.greenpill .orange-star {
+  transform-origin: 50% 50%;
+  transform: rotate(-135deg);
+}
+.greenpill:hover .green-star,
+.project-content:hover +.greenpill .green-star {
+  transform-origin: 50% 50%;
+  transform: rotate(105deg);
 }
 
 /* footer */
