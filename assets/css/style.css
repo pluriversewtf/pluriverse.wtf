@@ -417,23 +417,31 @@ section {
   text-align: center;
 }
 .projects-container {
-  border: 1px solid var(--orange-color);
-  border-radius: 16px;
   max-width: min(42rem, 75%);
   margin: 4rem auto;
-  padding: 3.5%;
-}
-.greenpill-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.project-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 10%;
+  padding: 8% 10%;
+  border: 1px solid var(--orange-color);
+  border-radius: 16px;
+}
+.project-container svg {
+  max-width: 100%;
+  height: auto;
 }
 .project-content {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
+
 .project-content a {
   line-height: 1.1;
   width: fit-content;
@@ -456,6 +464,25 @@ section {
 .project-content:hover +.greenpill .green-star {
   transform-origin: 50% 50%;
   transform: rotate(105deg);
+}
+
+.fill {
+  transition: all 0.6s ease-out;
+  color: transparent;
+}
+.project-content:hover + svg .fill,
+svg:hover .fill {
+  color: #51C3A6;
+}
+
+@media only screen and (max-width: 35rem) {
+  .project-content {
+    font-size: 1rem;
+  }
+  .project-content h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 
 /* footer */
