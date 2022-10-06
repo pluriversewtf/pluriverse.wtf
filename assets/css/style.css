@@ -440,6 +440,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  min-width: 40%;
 }
 
 .project-content a {
