@@ -1,145 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>An Invitation to Dream Wildly Together</title>
-	<meta name="description" content="step into the solarpunk pluriverse...">
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9MJ4R4XGW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Invitation to Dream Wildly Together</title>
+    <meta name="description" content="step into the solarpunk pluriverse..." />
 
-    gtag('config', 'G-P9MJ4R4XGW');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P9MJ4R4XGW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- fonts & stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="preload" href="./assets/fonts/Avara-Bold.woff2" as="font" type="font/woff2" crossorigin>
+      gtag("config", "G-P9MJ4R4XGW");
+    </script>
 
-	<!-- preloads -->
-	<link rel="preload" as="image" href="./assets/1.png">
-	<link rel="preload" as="image" href="./assets/2.png">
-	<link rel="preload" as="image" href="./assets/3.png">
-  <link rel="preload" as="image" href="./assets/4.png">
-	<link rel="preload" as="image" href="./assets/mobile-bg.png">
-	<link rel="preload" as="image" href="./assets/front-cover-320.jpg">
-	<link rel="preload" as="image" href="./assets/front-cover-426-2x.jpg">
+    <!-- fonts & stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      rel="preload"
+      href="./assets/fonts/Avara-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
-	<!-- twitter cards & og -->
-	<meta name="twitter:domain" content="pluriverse.wtf" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@web3eventco" />
-	<meta property="twitter:title" content="WTF is the Pluriverse Guide?" />
-	<meta property="twitter:description" content=".... an invitation to dream wildy together.
+    <!-- preloads -->
+    <link rel="preload" as="image" href="./assets/1.png" />
+    <link rel="preload" as="image" href="./assets/2.png" />
+    <link rel="preload" as="image" href="./assets/3.png" />
+    <link rel="preload" as="image" href="./assets/4.png" />
+    <link rel="preload" as="image" href="./assets/mobile-bg.png" />
+    <link rel="preload" as="image" href="./assets/front-cover-320.jpg" />
+    <link rel="preload" as="image" href="./assets/front-cover-426-2x.jpg" />
 
-  step into the pluriverse, anon.">
-	<meta name="twitter:image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png" />
-	<meta property="twitter:image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png" />
+    <!-- twitter cards & og -->
+    <meta name="twitter:domain" content="pluriverse.wtf" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@web3eventco" />
+    <meta property="twitter:title" content="WTF is the Pluriverse Guide?" />
+    <meta
+      property="twitter:description"
+      content=".... an invitation to dream wildy together.
 
-	<meta property="og:title" content="pluriverse.wtf">
-	<meta property="og:description" content="step into the pluriverse...">
-    <meta property="og:url" content="https://pluriverse.wtf">
-    <meta property="og:image" itemprop="image" content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png">
+  step into the pluriverse, anon."
+    />
+    <meta
+      name="twitter:image"
+      content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png"
+    />
+    <meta
+      property="twitter:image"
+      content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png"
+    />
 
-	<!-- icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-	<link rel="manifest" href="/icons/site.webmanifest">
-	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/icons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-config" content="/icons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-</head>
-<body>
-	<div class="hero">
-		<div class="background">
-			<picture>
-				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
-				<source media="(min-width: 58rem)" srcset="./assets/1.png" width='2000' height='1243' />
-				<img class="layer-1" src="./assets/1.png" alt="" width='2000' height='1243' />
-			</picture>
-			<picture>
-				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
-				<source media="(min-width: 58rem)" srcset="./assets/2.png" width='2000' height='1243' />
-				<img class="layer-2" src="./assets/2.png" alt="" width='2000' height='1243' />
-			</picture>
-      <picture>
-				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
-				<source media="(min-width: 58rem)" srcset="./assets/3.png" width='2000' height='1243' />
-				<img class="layer-3" src="./assets/3.png" alt="" width='2000' height='1243' />
-			</picture>
-      <picture>
-				<source media="(max-width: 58rem)" srcset="./assets/blank.svg" width="1" height="1" />
-				<source media="(min-width: 58rem)" srcset="./assets/4.png" width='2000' height='1243' />
-				<img class="layer-4" src="./assets/4.png" alt="" width='1440' height='869' />
-			</picture>
-		</div>
+    <meta property="og:title" content="pluriverse.wtf" />
+    <meta property="og:description" content="step into the pluriverse..." />
+    <meta property="og:url" content="https://pluriverse.wtf" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://pluriverse.wtf/assets/pluriverse-twitter-card.png"
+    />
 
-		<div class="hero-container">
-			<div class="hero-content">
-				<h1 class="main-text">Step into the<br/>Pluriverse</h1>
-				<p>
-					Read the guide &nbsp;
-					<a class="link" href="./pdf/pluriverse-guide.pdf">[PDF]</a>&nbsp;&nbsp;
-					<a class="link" href="https://heyzine.com/flip-book/a1ff9d9052.html#page/1">[Flipbook]</a>
-				</p>
-        <p>Buy the book &nbsp;
-				  <a class="link" href="https://www.blurb.com/b/11250092-a-guide-to-the-pluriverse">[Softcover]</a>
-        </p>
-        <p>Join the chat &nbsp;
-          <a class="link" href="https://discord.gg/DMWDK2gSjy">[Discord]</a>
-        </p>
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header>
+      <a class="link" href="/coalition">Join the coalition</a>
+    </header>
+    <div class="hero">
+      <div class="background">
+        <picture>
+          <source
+            media="(max-width: 58rem)"
+            srcset="./assets/blank.svg"
+            width="1"
+            height="1"
+          />
+          <source
+            media="(min-width: 58rem)"
+            srcset="./assets/1.png"
+            width="2000"
+            height="1243"
+          />
+          <img
+            class="layer-1"
+            src="./assets/1.png"
+            alt=""
+            width="2000"
+            height="1243"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 58rem)"
+            srcset="./assets/blank.svg"
+            width="1"
+            height="1"
+          />
+          <source
+            media="(min-width: 58rem)"
+            srcset="./assets/2.png"
+            width="2000"
+            height="1243"
+          />
+          <img
+            class="layer-2"
+            src="./assets/2.png"
+            alt=""
+            width="2000"
+            height="1243"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 58rem)"
+            srcset="./assets/blank.svg"
+            width="1"
+            height="1"
+          />
+          <source
+            media="(min-width: 58rem)"
+            srcset="./assets/3.png"
+            width="2000"
+            height="1243"
+          />
+          <img
+            class="layer-3"
+            src="./assets/3.png"
+            alt=""
+            width="2000"
+            height="1243"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width: 58rem)"
+            srcset="./assets/blank.svg"
+            width="1"
+            height="1"
+          />
+          <source
+            media="(min-width: 58rem)"
+            srcset="./assets/4.png"
+            width="2000"
+            height="1243"
+          />
+          <img
+            class="layer-4"
+            src="./assets/4.png"
+            alt=""
+            width="1440"
+            height="869"
+          />
+        </picture>
       </div>
 
-      <a href="https://heyzine.com/flip-book/a1ff9d9052.html#page/1" class="book">
-        <div class="border">
-          <img class="border-top" src="./assets/border-top.svg" width="426" height="13.6" alt="" />
-          <img class="border-right" src="./assets/border-right.svg" width="23.39" height="538" alt="" />
-          <img class="border-bottom" src="./assets/border-bottom.svg" width="426" height="8.2" alt="" />
-          <img class="border-left" src="./assets/border-left.svg" width="9.91" height="538" alt="" />
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="main-text">Step into the<br />Pluriverse</h1>
+          <p>
+            Read the guide &nbsp;
+            <a class="link" href="./pdf/pluriverse-guide.pdf">[PDF]</a
+            >&nbsp;&nbsp;
+            <a
+              class="link"
+              href="https://heyzine.com/flip-book/578901d459.html"
+              >[Flipbook]</a
+            >
+          </p>
         </div>
 
-        <picture>
-          <source 
-            media="(max-width: 80rem)" 
-            srcset="./assets/front-cover-320.jpg 1x,
-            ./assets/front-cover-320-2x.jpg 2x" 
-            width='320' height='403'/>
-          <source 
-          media="(min-width: 80.1rem)" 
-          srcset="./assets/front-cover-426.jpg 1x,
-          ./assets/front-cover-426-2x.jpg 2x," 
-          width='426' height='538'/>
-          <img class="logo" src='./assets/front-cover-320.jpg' width='320' height='403' alt="a guide to the pluriverse" />
-        </picture>
-      </a>
-		</div>
-	</div>
+        <a
+          href="https://heyzine.com/flip-book/578901d459.html"
+          class="book"
+        >
+          <div class="border">
+            <img
+              class="border-top"
+              src="./assets/border-top.svg"
+              width="426"
+              height="13.6"
+              alt=""
+            />
+            <img
+              class="border-right"
+              src="./assets/border-right.svg"
+              width="23.39"
+              height="538"
+              alt=""
+            />
+            <img
+              class="border-bottom"
+              src="./assets/border-bottom.svg"
+              width="426"
+              height="8.2"
+              alt=""
+            />
+            <img
+              class="border-left"
+              src="./assets/border-left.svg"
+              width="9.91"
+              height="538"
+              alt=""
+            />
+          </div>
 
-  <section class="wtf">
-    <h2 class="main-text">WTF is the<br/>Pluriverse Guide?</h2>
-    <p class="description">An invitation to dream wildly together</p>
-    <div class="cards">
-      <div class="card-container"><div class="card"><p>An invitation to exchange stories, ideas and designs.</p></div></div>
-      <div class="card-container"><div class="card"><p>A schelling point for the creation of Pluriversal culture.</p></div></div>
-      <div class="card-container"><div class="card"><p>A challenge to the vision of Stephenson's metaverse.</p></div></div>
-      <div class="card-container"><div class="card"><p>A challenge to the vision of Zuck’s metaverse.</p></div></div>
-      <div class="card-container"><div class="card"><p>A challenge to build a bottoms-up vision of many metaverses.</p></div></div>
-      <div class="card-container"><div class="card"><p>A place to intentionally-future a p2p metaverse, bottoms up, by & for the pluriversal people.</p></div></div>
-      <div class="card-container"><div class="card"><p>A place to discuss public goods, coordination, Moloch, solarpunk, cypherpunk, & many value systems.</p></div></div>
-      <div class="card-container"><div class="card"><p>A place to fund, create, & distribute pluriversal media.</p></div></div> </div>
+          <picture>
+            <source
+              media="(max-width: 80rem)"
+              srcset="
+                ./assets/front-cover-320.jpg    1x,
+                ./assets/front-cover-320-2x.jpg 2x
+              "
+              width="320"
+              height="403"
+            />
+            <source
+              media="(min-width: 80.1rem)"
+              srcset="
+                ./assets/front-cover-426.jpg    1x,
+                ./assets/front-cover-426-2x.jpg 2x
+              "
+              width="426"
+              height="538"
+            />
+            <img
+              class="logo"
+              src="./assets/front-cover-320.jpg"
+              width="320"
+              height="403"
+              alt="a guide to the pluriverse"
+            />
+          </picture>
+        </a>
+      </div>
     </div>
-  </section>
 
-  <section class="past-comics">
+    <section class="wtf">
+      <h2 class="main-text">WTF is the<br />Pluriverse?</h2>
+      <p class="description">
+        The pluriverse is a transmedia lorecrafting experiment in collective
+        imagineering.
+      </p>
+      <div class="cards">
+        <div class="card-container">
+          <div class="card">
+            <p>
+              Pluriverse: A pluriverse is a world in which diverse hopes can be
+              sown, multiple opportunities can be cultivated, and a plurality of
+              meaningful lives can be achieved by the richly different and
+              caring people we are.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p>
+              Transmedia: Utilizing numerous media forms to elaborate narrative
+              content. The way the story is told is as important as the content
+              of the story.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p>
+              Lorecraft: Stories that a community tells itself to strengthen
+              internal alignment and cohesion.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p>
+              Experiment: Following a method, taking risks, venturing into the
+              unknown.
+            </p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p>Collective: Written together, for each other.</p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <p>
+              Imagineering: The implementation of creative ideas in practical
+              form.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-card">
+      <h2 class="main-text" style="max-width: 40rem">
+        Ethereum is/was/will be Pluriversal
+      </h2>
+      <p class="info-card_description">
+        The Pluriverse is focused on raising the sanity waterline of the web3
+        ecosystem.<br /><br />
+
+        We understand Ethereum to be a key piece of coordination and
+        regeneration technology that requires high resolution myth weaving and
+        deep fidelity lore questing to persevere the moral attacks of our
+        contemporary moment.<br /><br />
+
+        The Pluriverse draws upon diverse influences such as design thinking,
+        ontology, aesthetic theory, cultural studies, and the roots of
+        cypherpunk to prognosticate a hopeful vision of the future.<br /><br />
+
+        A viable future requires thinking-feeling beyond a neutral technocratic
+        position, averting the catastrophic metacrisis, avoiding dysoptian
+        solutionism, and dreaming acutely into the techno-imaginative
+        dependencies to come.<br /><br />
+      </p>
+
+      <h3 class="center-link">
+        <a
+          class="link underline"
+          href="https://twitter.com/VitalikButerin/status/1496695587495981056"
+        >
+          Reminder: Ethereum is neutral, but I am not. - Vitalik
+        </a>
+      </h3>
+    </section>
+
+    <!-- <section class="past-comics">
     <div class="covers">
       <a class="cover cover1" href="https://store.gitcoin.co/products/ethereum-vs-moloch-comic-book-1-digital-edition">
         <picture>
@@ -242,122 +463,834 @@
         <p class="main-text">#4</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="projects">
-    <h2 class="main-text">Projects</h2>
-    <div class="projects-container">
-      <div class="project-container">
-        <div class="project-content">
-          <h3>GREENPILL<br/>
-            <a class="link" href="https://availableon.com/greenpill">PODCASTS </a>/ 
-            <a class="link" href="https://www.blurb.com/bookstore/invited/9502747/c7ff865edc08edd6b595c5a9bf5bd613117953e7">BOOK</a>
-          </h3>
-          <a class="link" href="https://greenpill.party">[Find out more]</a>
+    <section class="projects">
+      <h2 class="main-text projects-title">Finite Projects</h2>
+      <div class="projects-container">
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              metalabel<br />
+              drop
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg
+            width="37"
+            height="215"
+            viewBox="0 0 37 215"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="metalabel">
+              <path
+                id="Vector"
+                d="M35.9291 177.669C26.697 177.405 19.2852 169.828 19.2852 160.533C19.2852 151.237 26.697 143.661 35.9291 143.396V177.669Z"
+                stroke="#51C3A6"
+              />
+              <path
+                id="Vector_2"
+                d="M18.2836 160.533C18.2836 169.828 10.8717 177.405 1.63965 177.669V143.396C10.8717 143.661 18.2836 151.237 18.2836 160.533Z"
+                stroke="#51C3A6"
+              />
+              <path
+                id="Vector_3"
+                d="M35.9275 18.517C35.9275 27.9853 28.2519 35.6609 18.7836 35.6609C9.31525 35.6609 1.63965 27.9853 1.63965 18.517C1.63965 9.04865 9.31525 1.37305 18.7836 1.37305C28.2519 1.37305 35.9275 9.04865 35.9275 18.517Z"
+                stroke="#51C3A6"
+              />
+              <path
+                id="Vector_4"
+                d="M1.2959 89.525C1.2959 79.8146 9.16613 71.9443 18.8766 71.9443C28.587 71.9443 36.4572 79.8146 36.4572 89.525V107.106H18.8766C9.16613 107.106 1.2959 99.2355 1.2959 89.525Z"
+                stroke="#51C3A6"
+              />
+              <path
+                id="Vector_5"
+                d="M1.63965 125.263C1.63965 115.8 9.32063 108.119 18.7836 108.119C28.2466 108.119 35.9275 115.8 35.9275 125.263V142.407H1.63965V125.263Z"
+                stroke="#51C3A6"
+              />
+              <path
+                id="Vector_6"
+                d="M1.63965 179.561H35.9275V214.373H1.63965V179.561Z"
+                stroke="#51C3A6"
+              />
+              <path
+                class="green" fill="currentColor"
+                d="M32.6848 48.3391L32.6854 48.3393C37.5045 50.1148 37.5045 56.9369 32.6854 58.7123L32.6848 58.7125L29.2201 59.9936L29.2193 59.9939C27.4396 60.6554 26.0204 62.0578 25.3577 63.8562C25.3577 63.8562 25.3577 63.8563 25.3577 63.8564L24.0768 67.3206L24.0766 67.3211C22.3011 72.1402 15.4791 72.1402 13.7036 67.3211L13.7034 67.3206L12.4223 63.8558L12.422 63.855C11.7605 62.0753 10.3582 60.6561 8.55973 59.9935C8.55967 59.9934 8.55961 59.9934 8.55956 59.9934L5.09537 58.7125L5.09482 58.7123C0.275685 56.9369 0.275685 50.1148 5.09482 48.3393L5.09537 48.3391L8.5601 47.0581L8.5609 47.0578C10.3406 46.3963 11.7597 44.994 12.4224 43.1956C12.4224 43.1955 12.4225 43.1954 12.4225 43.1953L13.7034 39.7311L13.7036 39.7306C15.4791 34.9114 22.3011 34.9114 24.0766 39.7306L24.0768 39.7311L25.3579 43.1958L25.3582 43.1966C26.0197 44.9764 27.422 46.3956 29.2204 47.0582C29.2205 47.0582 29.2206 47.0582 29.2206 47.0583L32.6848 48.3391Z"
+                stroke="#51C3A6"
+              />
+            </g>
+          </svg>
         </div>
-        <svg class="greenpill" width="228" height="236" viewBox="0 0 228 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M114.342 141.859V185.765M114.342 141.859L168.023 217.459L114.342 185.765M114.342 141.859L60.6676 217.459L114.342 185.765M93.7889 106.296L55.7473 84.3435M93.7889 106.296L1.44434 114.959L55.7473 84.3435M93.7889 106.296L55.1188 22.0341L55.7473 84.3435M114.33 94.4459V50.5401M114.33 94.4459L60.6557 18.8403L114.33 50.5401M114.33 94.4459L168.011 18.8403L114.33 50.5401M134.872 106.296L172.913 84.3435M134.872 106.296L173.542 22.0341L172.913 84.3435M134.872 106.296L227.216 114.959L172.913 84.3435M134.872 130.003L172.913 151.956L227.216 121.346L134.872 130.003ZM134.872 130.003L172.919 151.956L173.542 214.265L134.872 130.003ZM93.8007 130.003L55.7591 151.956L55.1307 214.265L93.8007 130.003ZM1.44434 121.346L55.7473 151.956L93.7889 130.003L1.44434 121.346Z" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="green-star" d="M117.815 136.661C117.734 136.551 117.647 136.446 117.555 136.345C117.511 136.302 117.479 136.247 117.436 136.204C117.392 136.16 117.241 136.036 117.138 135.949L116.992 135.824C116.9 135.758 116.802 135.704 116.71 135.649C116.618 135.595 116.57 135.552 116.494 135.514L116.25 135.41C116.147 135.367 116.05 135.318 115.947 135.285L115.714 135.231C115.611 135.202 115.506 135.178 115.401 135.16C115.305 135.146 115.21 135.137 115.114 135.133C115.011 135.133 114.913 135.133 114.816 135.133C114.719 135.133 114.616 135.133 114.518 135.133C114.422 135.137 114.326 135.146 114.231 135.16C114.126 135.178 114.021 135.202 113.918 135.231L113.685 135.285L113.382 135.41L113.138 135.514L112.916 135.655C112.821 135.706 112.729 135.762 112.64 135.824C112.586 135.862 112.537 135.916 112.483 135.959C112.429 136.003 112.288 136.117 112.196 136.204L112.072 136.351C111.981 136.449 111.896 136.553 111.817 136.661L70.8444 194.653L100.359 130.018V129.991C100.407 129.879 100.449 129.764 100.484 129.648C100.484 129.577 100.538 129.507 100.559 129.436C100.581 129.365 100.603 129.224 100.619 129.121C100.635 129.017 100.657 128.947 100.667 128.86C100.678 128.773 100.667 128.68 100.667 128.593C100.667 128.506 100.667 128.376 100.667 128.267C100.667 128.158 100.668 128.121 100.641 128.044C100.613 127.968 100.64 127.8 100.592 127.68C100.592 127.604 100.548 127.539 100.532 127.468C100.516 127.397 100.473 127.245 100.429 127.137C100.386 127.028 100.354 126.968 100.316 126.887C100.278 126.805 100.229 126.696 100.175 126.604C100.121 126.511 100.072 126.446 100.013 126.364C99.9616 126.28 99.9057 126.198 99.8449 126.12C99.777 126.04 99.7046 125.964 99.6283 125.892C99.5742 125.832 99.52 125.767 99.4605 125.707C99.3847 125.636 99.2981 125.582 99.2169 125.517C99.1358 125.451 99.0709 125.397 98.9897 125.348C98.9085 125.299 98.8597 125.277 98.7948 125.239C98.7298 125.201 98.5838 125.114 98.4755 125.065L98.3294 125.016C98.1976 124.96 98.0619 124.912 97.9234 124.875C97.8752 124.863 97.8264 124.854 97.7773 124.848C97.6332 124.812 97.4866 124.786 97.3388 124.772L26.8457 118.129L97.3171 111.486C97.5104 111.467 97.7021 111.434 97.8909 111.388H97.9451C98.1145 111.342 98.2807 111.286 98.443 111.219L98.5241 111.181C98.6812 111.111 98.8332 111.029 98.9788 110.937L99.033 110.904C99.1683 110.812 99.3036 110.708 99.4335 110.6L99.4713 110.567C99.4713 110.567 99.4714 110.567 99.4984 110.567C99.5255 110.567 99.6121 110.448 99.6662 110.388C99.7425 110.316 99.8148 110.24 99.8827 110.16C99.9476 110.078 99.9964 109.996 100.051 109.915C100.11 109.837 100.164 109.755 100.213 109.67C100.267 109.583 100.305 109.485 100.354 109.393C100.402 109.301 100.435 109.23 100.467 109.143C100.507 109.032 100.542 108.92 100.57 108.806C100.57 108.735 100.613 108.67 100.63 108.599C100.63 108.48 100.662 108.36 100.678 108.235C100.695 108.11 100.678 108.088 100.705 108.012C100.732 107.936 100.705 107.795 100.705 107.686C100.705 107.577 100.705 107.512 100.705 107.425C100.705 107.338 100.673 107.251 100.657 107.164C100.643 107.058 100.623 106.953 100.597 106.849C100.597 106.778 100.543 106.707 100.521 106.631C100.5 106.555 100.446 106.403 100.397 106.289L70.8823 41.6533L111.855 99.6459L111.936 99.7491C112.017 99.8553 112.104 99.957 112.196 100.054L112.326 100.179C112.418 100.266 112.51 100.347 112.608 100.423L112.738 100.521C112.881 100.624 113.031 100.716 113.187 100.798H113.219C113.371 100.875 113.529 100.94 113.69 100.994H113.75H113.836C113.961 101.032 114.085 101.059 114.215 101.086L114.367 101.114C114.535 101.137 114.705 101.15 114.875 101.152C115.046 101.15 115.216 101.137 115.384 101.114L115.536 101.086C115.66 101.059 115.79 101.032 115.915 100.994H116.001H116.061C116.222 100.94 116.38 100.875 116.532 100.798C116.689 100.716 116.841 100.624 116.986 100.521L117.111 100.423C117.211 100.348 117.307 100.266 117.398 100.179L117.522 100.059C117.614 99.9613 117.701 99.8579 117.787 99.7491L117.869 99.6459L158.842 41.6533L129.322 106.289C129.273 106.403 129.235 106.517 129.197 106.631C129.167 106.702 129.142 106.775 129.121 106.849C129.094 106.952 129.078 107.061 129.062 107.164C129.046 107.267 129.024 107.338 129.013 107.425C129.002 107.512 129.013 107.599 129.013 107.692C129.008 107.798 129.008 107.905 129.013 108.012C129.008 108.086 129.008 108.161 129.013 108.235C129.021 108.358 129.037 108.479 129.062 108.599C129.062 108.67 129.105 108.735 129.121 108.806C129.15 108.92 129.184 109.032 129.224 109.143C129.257 109.23 129.3 109.306 129.338 109.393C129.379 109.488 129.426 109.581 129.479 109.67C129.527 109.757 129.581 109.833 129.635 109.915C129.69 109.996 129.744 110.078 129.809 110.16C129.874 110.241 129.95 110.312 130.02 110.388C130.09 110.464 130.128 110.513 130.193 110.567H130.22L130.258 110.6C130.384 110.709 130.518 110.809 130.659 110.899L130.707 110.937C130.855 111.028 131.009 111.11 131.167 111.181L131.248 111.219C131.409 111.286 131.573 111.342 131.741 111.388H131.801C131.989 111.434 132.181 111.467 132.374 111.486L202.846 118.129L132.353 124.772C132.214 124.787 132.077 124.811 131.941 124.842C131.887 124.842 131.828 124.842 131.774 124.875C131.646 124.91 131.521 124.953 131.4 125.005C131.339 125.024 131.28 125.046 131.221 125.071C131.119 125.118 131.02 125.171 130.924 125.228C130.848 125.266 130.772 125.305 130.702 125.348C130.626 125.4 130.554 125.456 130.485 125.517C130.398 125.574 130.315 125.637 130.236 125.707C130.171 125.767 130.123 125.832 130.063 125.892C130.004 125.952 129.917 126.038 129.852 126.12C129.787 126.202 129.738 126.283 129.679 126.364C129.619 126.446 129.565 126.522 129.516 126.604C129.468 126.685 129.424 126.794 129.381 126.887C129.338 126.979 129.3 127.05 129.267 127.137C129.235 127.224 129.197 127.359 129.165 127.468C129.132 127.577 129.116 127.604 129.1 127.68C129.075 127.802 129.059 127.926 129.051 128.05C129.045 128.124 129.045 128.198 129.051 128.273C129.046 128.38 129.046 128.486 129.051 128.593C129.051 128.68 129.051 128.773 129.051 128.86C129.062 128.946 129.078 129.031 129.1 129.115C129.114 129.223 129.134 129.33 129.159 129.436C129.18 129.508 129.205 129.579 129.235 129.648C129.267 129.765 129.309 129.88 129.359 129.991C129.359 129.991 129.359 129.99 129.359 130.018L158.874 194.648L117.815 136.661Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="orange-star" d="M89.8905 122.172C90.0362 122.065 90.1758 121.949 90.3085 121.826C90.3662 121.769 90.4384 121.725 90.4961 121.668C90.5537 121.61 90.7192 121.408 90.8345 121.271L91.0003 121.076C91.0867 120.954 91.159 120.824 91.2311 120.702C91.3031 120.579 91.3608 120.514 91.4112 120.413L91.5481 120.089C91.6057 119.952 91.6706 119.822 91.7138 119.685L91.7859 119.375C91.8248 119.237 91.856 119.098 91.8795 118.957C91.8983 118.83 91.9102 118.703 91.9154 118.575C91.9154 118.438 91.9154 118.308 91.9154 118.178C91.9154 118.048 91.9154 117.911 91.9154 117.782C91.9106 117.654 91.8987 117.526 91.8795 117.399C91.856 117.258 91.8248 117.119 91.7859 116.981L91.7138 116.671L91.5481 116.268L91.4112 115.943L91.2237 115.648C91.1561 115.521 91.0815 115.398 91.0003 115.28C90.9498 115.208 90.8778 115.143 90.8201 115.071C90.7625 114.999 90.6113 114.811 90.4961 114.689L90.3015 114.523C90.1711 114.402 90.0338 114.289 89.8905 114.184L13.0182 59.6071L98.6963 98.9213L98.7322 98.9213C98.8802 98.9852 99.032 99.0405 99.1864 99.0871C99.2801 99.0871 99.3735 99.1591 99.4672 99.1879C99.5609 99.2168 99.7483 99.2457 99.8852 99.2673C100.022 99.289 100.116 99.3177 100.231 99.3321C100.346 99.3465 100.469 99.3321 100.584 99.3321C100.7 99.3321 100.873 99.3321 101.017 99.3321C101.161 99.3321 101.211 99.3322 101.312 99.2962C101.413 99.2601 101.636 99.2961 101.795 99.2312C101.896 99.2312 101.982 99.1735 102.076 99.1519C102.169 99.1302 102.371 99.0726 102.515 99.0149C102.659 98.9572 102.739 98.914 102.847 98.8635C102.955 98.8131 103.099 98.7482 103.221 98.6761C103.344 98.604 103.431 98.5391 103.539 98.4598C103.651 98.3919 103.759 98.3174 103.863 98.2364C103.969 98.1459 104.07 98.0495 104.165 97.9479C104.245 97.8758 104.331 97.8037 104.411 97.7244C104.504 97.6234 104.576 97.5081 104.663 97.4C104.749 97.2918 104.821 97.2054 104.886 97.0972C104.951 96.9891 104.98 96.9241 105.03 96.8376C105.081 96.7511 105.196 96.5565 105.261 96.4123L105.326 96.2177C105.401 96.0421 105.464 95.8614 105.513 95.6769C105.529 95.6128 105.54 95.5478 105.549 95.4823C105.597 95.2904 105.631 95.0952 105.65 94.8982L114.456 0.999996L123.261 94.8694C123.287 95.1268 123.33 95.3822 123.391 95.6336L123.391 95.7058C123.451 95.9314 123.526 96.1529 123.614 96.369L123.665 96.4771C123.758 96.6863 123.867 96.8888 123.989 97.0828L124.032 97.155C124.155 97.3352 124.292 97.5154 124.436 97.6885L124.479 97.7388C124.479 97.7388 124.479 97.7388 124.479 97.7749C124.479 97.8109 124.637 97.9263 124.717 97.9984C124.812 98.1001 124.913 98.1963 125.019 98.2867C125.127 98.3733 125.236 98.4382 125.344 98.5103C125.447 98.589 125.556 98.6612 125.668 98.7266C125.783 98.7987 125.913 98.8492 126.035 98.9141C126.158 98.979 126.252 99.0222 126.367 99.0654C126.513 99.1187 126.663 99.1643 126.814 99.2024C126.907 99.2024 126.994 99.2601 127.087 99.2818C127.246 99.2818 127.404 99.3249 127.57 99.3465C127.736 99.3682 127.765 99.3466 127.866 99.3826C127.967 99.4187 128.154 99.3826 128.298 99.3826C128.442 99.3826 128.529 99.3826 128.644 99.3826C128.759 99.3826 128.875 99.3395 128.99 99.3178C129.131 99.2991 129.27 99.2725 129.408 99.2385C129.502 99.2385 129.595 99.1664 129.696 99.1376C129.797 99.1088 129.999 99.0365 130.15 98.9716L215.828 59.6576L138.956 114.235L138.819 114.343C138.678 114.45 138.543 114.566 138.415 114.689L138.25 114.862C138.134 114.984 138.026 115.107 137.925 115.237L137.795 115.41C137.659 115.6 137.537 115.8 137.428 116.008L137.428 116.051C137.327 116.254 137.24 116.464 137.169 116.679L137.169 116.758L137.169 116.873C137.118 117.039 137.082 117.205 137.046 117.378L137.01 117.58C136.979 117.804 136.962 118.031 136.96 118.257C136.962 118.484 136.979 118.711 137.01 118.935L137.046 119.137C137.082 119.303 137.118 119.476 137.169 119.642L137.169 119.757L137.169 119.836C137.24 120.051 137.327 120.261 137.428 120.464C137.537 120.674 137.659 120.876 137.795 121.069L137.925 121.235C138.025 121.369 138.134 121.497 138.25 121.617L138.408 121.783C138.538 121.906 138.675 122.021 138.819 122.136L138.956 122.244L215.828 176.821L130.15 137.5C129.999 137.435 129.847 137.385 129.696 137.334C129.602 137.294 129.506 137.26 129.408 137.233C129.271 137.197 129.127 137.176 128.99 137.154C128.853 137.132 128.759 137.103 128.644 137.089C128.529 137.075 128.413 137.089 128.291 137.089C128.149 137.082 128.007 137.082 127.866 137.089C127.767 137.082 127.669 137.082 127.57 137.089C127.408 137.1 127.247 137.121 127.087 137.154C126.994 137.154 126.907 137.212 126.814 137.233C126.663 137.271 126.513 137.317 126.367 137.37C126.252 137.413 126.151 137.471 126.035 137.522C125.909 137.577 125.787 137.64 125.668 137.709C125.553 137.774 125.452 137.846 125.344 137.918C125.236 137.99 125.127 138.062 125.019 138.149C124.911 138.235 124.818 138.336 124.717 138.43C124.616 138.524 124.551 138.574 124.479 138.661L124.479 138.697L124.436 138.747C124.291 138.915 124.159 139.094 124.039 139.281L123.989 139.346C123.868 139.543 123.76 139.748 123.665 139.958L123.614 140.067C123.526 140.28 123.451 140.499 123.391 140.723L123.391 140.802C123.33 141.053 123.286 141.309 123.261 141.566L114.456 235.436L105.65 141.537C105.629 141.353 105.598 141.17 105.556 140.989C105.556 140.917 105.556 140.838 105.513 140.766C105.467 140.596 105.41 140.43 105.34 140.268C105.316 140.188 105.287 140.108 105.254 140.031C105.191 139.895 105.121 139.762 105.045 139.634C104.994 139.533 104.944 139.432 104.886 139.339C104.818 139.238 104.743 139.141 104.663 139.05C104.587 138.934 104.503 138.823 104.411 138.718C104.331 138.632 104.245 138.567 104.165 138.488C104.086 138.408 103.971 138.293 103.863 138.207C103.755 138.12 103.647 138.055 103.539 137.976C103.431 137.896 103.33 137.824 103.221 137.759C103.113 137.695 102.969 137.637 102.847 137.579C102.724 137.522 102.631 137.471 102.515 137.428C102.4 137.385 102.22 137.334 102.076 137.291C101.932 137.248 101.896 137.226 101.795 137.204C101.633 137.172 101.469 137.151 101.305 137.14C101.207 137.132 101.108 137.132 101.009 137.14C100.868 137.132 100.726 137.132 100.584 137.14C100.469 137.14 100.346 137.14 100.231 137.14C100.117 137.154 100.004 137.176 99.8926 137.204C99.7495 137.223 99.6074 137.25 99.4672 137.284C99.3713 137.311 99.2777 137.344 99.1864 137.385C99.031 137.428 98.8789 137.483 98.7322 137.55C98.7322 137.55 98.7323 137.55 98.6963 137.55L13.0252 176.865L89.8905 122.172Z" fill="#2D2038" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="pill" d="M149.502 111.771C153.078 108.197 155.087 103.349 155.087 98.2946C155.087 93.24 153.078 88.3923 149.502 84.8177C145.927 81.2443 141.078 79.2368 136.022 79.2368C130.965 79.2368 126.116 81.2443 122.541 84.8177L103.659 103.69L130.621 130.637L149.502 111.771Z" fill="#2D2038" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="pill" d="M103.66 103.689L84.7781 122.561C81.2029 126.135 79.1943 130.981 79.1943 136.035C79.1943 141.089 81.2029 145.935 84.7781 149.509C88.3535 153.082 93.2027 155.09 98.259 155.09C103.315 155.09 108.164 153.082 111.74 149.509L130.621 130.637L103.66 103.689Z" fill="#2D2038" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="pill" d="M146.995 82.7144C149.581 86.3843 150.789 90.849 150.404 95.3216C150.019 99.7941 148.066 103.987 144.89 107.162L126.009 126.027L130.621 130.637L149.502 111.771C153.078 108.197 155.087 103.349 155.087 98.2946C155.087 93.24 153.078 88.3923 149.502 84.8177C148.729 84.0458 147.89 83.3422 146.995 82.7144Z" fill="#2D2038" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="pill" d="M126.01 126.027L107.134 144.899C103.958 148.077 99.7608 150.032 95.2833 150.418C90.8057 150.804 86.3356 149.596 82.6621 147.009C83.2903 147.903 83.9944 148.741 84.7667 149.515C88.3421 153.088 93.1913 155.096 98.2475 155.096C103.304 155.096 108.153 153.088 111.728 149.515L130.61 130.643L125.998 126.033L126.01 126.027Z" fill="#2D2038" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
 
-      <div class="project-container">
-        <div class="project-content">
-          <h3>THE GREATEST<br/>LARP</h3>
-          <a class="link" href="https://greatestlarp.com/">[Find out more]</a>
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              concept<br />
+              album
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg
+            width="209"
+            height="214"
+            viewBox="0 0 209 214"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="concept">
+              <g id="Group 15763">
+                <rect
+                  id="Rectangle 16"
+                  x="18.9727"
+                  y="12.5"
+                  width="189"
+                  height="189"
+                  stroke="#51C3A6"
+                />
+                <rect
+                  id="Rectangle 17"
+                  x="-0.5"
+                  y="0.5"
+                  width="18.7917"
+                  height="189"
+                  transform="matrix(-1 0 0 1 18.792 12)"
+                  stroke="#51C3A6"
+                />
+                <circle
+                  id="Ellipse 1"
+                  cx="113.473"
+                  cy="107"
+                  r="86.5833"
+                  stroke="#51C3A6"
+                />
+                <circle
+                  id="green"
+                  cx="113.473"
+                  cy="107"
+                  r="15.3333"
+                  stroke="#51C3A6"
+                />
+                <g id="Group 15762">
+                  <path
+                    id="Vector 11"
+                    d="M0.000976562 146.583H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 31"
+                    d="M0.000976562 172.972H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 12"
+                    d="M0.000976562 139.986H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 32"
+                    d="M0.000976562 166.376H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 36"
+                    d="M0.000976562 192.764H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 13"
+                    d="M0.000976562 133.39H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 33"
+                    d="M0.000976562 159.777H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 37"
+                    d="M0.000976562 186.167H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 14"
+                    d="M0.000976562 126.792H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 34"
+                    d="M0.000976562 153.181H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 38"
+                    d="M0.000976562 179.569H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 15"
+                    d="M0.000976562 120.194H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 16"
+                    d="M0.000976562 113.597H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 17"
+                    d="M0.000976562 107H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 18"
+                    d="M0.000976562 100.403H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 19"
+                    d="M0.000976562 93.8047H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 20"
+                    d="M0.000976562 87.209H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 21"
+                    d="M0.000976562 80.6104H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 22"
+                    d="M0.000976562 74.0137H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 23"
+                    d="M0.000976562 67.418H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 24"
+                    d="M0.000976562 60.8193H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 25"
+                    d="M0.000976562 54.2217H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 26"
+                    d="M0.000976562 47.625H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 27"
+                    d="M0.000976562 41.0273H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 28"
+                    d="M0.000976562 34.4307H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 29"
+                    d="M0.000976562 27.833H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 30"
+                    d="M0.000976562 21.2363H19.1329"
+                    stroke="#51C3A6"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <svg
+            width="209"
+            height="214"
+            viewBox="0 0 209 214"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="concept">
+              <g id="Group 15763">
+                <rect
+                  id="Rectangle 16"
+                  x="18.9727"
+                  y="12.5"
+                  width="189"
+                  height="189"
+                  stroke="#51C3A6"
+                />
+                <rect
+                  id="Rectangle 17"
+                  x="-0.5"
+                  y="0.5"
+                  width="18.7917"
+                  height="189"
+                  transform="matrix(-1 0 0 1 18.792 12)"
+                  stroke="#51C3A6"
+                />
+                <circle
+                  id="Ellipse 1"
+                  cx="113.473"
+                  cy="107"
+                  r="86.5833"
+                  stroke="#51C3A6"
+                />
+                <circle
+                  class="green" fill="currentColor"
+                  cx="113.473"
+                  cy="107"
+                  r="15.3333"
+                  stroke="#51C3A6"
+                />
+                <g id="Group 15762">
+                  <path
+                    id="Vector 11"
+                    d="M0.000976562 146.583H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 31"
+                    d="M0.000976562 172.972H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 12"
+                    d="M0.000976562 139.986H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 32"
+                    d="M0.000976562 166.376H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 36"
+                    d="M0.000976562 192.764H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 13"
+                    d="M0.000976562 133.39H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 33"
+                    d="M0.000976562 159.777H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 37"
+                    d="M0.000976562 186.167H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 14"
+                    d="M0.000976562 126.792H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 34"
+                    d="M0.000976562 153.181H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 38"
+                    d="M0.000976562 179.569H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 15"
+                    d="M0.000976562 120.194H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 16"
+                    d="M0.000976562 113.597H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 17"
+                    d="M0.000976562 107H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 18"
+                    d="M0.000976562 100.403H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 19"
+                    d="M0.000976562 93.8047H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 20"
+                    d="M0.000976562 87.209H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 21"
+                    d="M0.000976562 80.6104H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 22"
+                    d="M0.000976562 74.0137H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 23"
+                    d="M0.000976562 67.418H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 24"
+                    d="M0.000976562 60.8193H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 25"
+                    d="M0.000976562 54.2217H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 26"
+                    d="M0.000976562 47.625H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 27"
+                    d="M0.000976562 41.0273H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 28"
+                    d="M0.000976562 34.4307H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 29"
+                    d="M0.000976562 27.833H19.1329"
+                    stroke="#51C3A6"
+                  />
+                  <path
+                    id="Vector 30"
+                    d="M0.000976562 21.2363H19.1329"
+                    stroke="#51C3A6"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
         </div>
-        <svg width="226" height="235" viewBox="0 0 226 235" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M139.362 57.0001C119.035 52.0041 93.2329 57.5754 75.1744 71.7762" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M63.2555 84.0693C62.8017 84.7052 62.3177 85.4016 61.864 86.0375C48.6151 106.022 49.4318 132.849 50.6417 174.634C51.035 189.289 53.5456 209.394 53.5456 209.394L71.0899 216.116L68.428 155.346L57.2057 146.595L57.3872 124.007L57.5687 113.743L64.7981 117.74L91.5381 132.576L112.258 123.765L140.148 111.896L150.916 107.324L151.158 107.202L151.219 110.806V110.866L151.733 137.3L116.947 153.741L118.459 215.873C118.459 215.873 161.594 204.64 181.8 195.314C182.95 194.799 184.644 193.043 184.644 193.043L184.946 190.954L184.311 169.335" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M182.315 108.868C182.315 108.686 182.255 108.474 182.255 108.293C181.045 98.0282 177.385 88.1876 171.486 79.77C169.218 76.4696 166.616 73.3812 163.682 70.6258C162.472 69.4752 159.236 66.4473 154.698 63.5708" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M84.8535 129.216L64.7684 117.74L67.6722 130.73L81.9799 133.516L84.8838 129.216H84.8535Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M112.168 123.704L117.492 130.093L135.551 124.643L140.058 111.835L112.168 123.704V123.704Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M116.403 155.043L102.973 138.753L84.4605 139.692L72.3005 157.89L73.6315 200.371L80.9819 208.304L112.168 206.911L117.492 202.279L116.403 155.043V155.043Z" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M171.486 79.74C167.312 78.6499 164.469 79.2252 162.744 79.8611C154.396 82.889 149.193 95.3336 151.099 110.746" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path class="fill" d="M93.2931 116.922L20.0003 36.804L93.2931 83.3427L206 19L93.2931 116.922Z" fill="currentColor" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M57.4177 124.068C56.9035 118.921 56.722 112.411 57.5992 104.932C58.4764 97.3316 60.2006 90.9731 61.8945 86.0376" stroke="#F4E5C9" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M184.463 108.292H176.598C170.821 108.292 166.072 120.858 165.709 136.755V138.783C165.709 155.588 170.579 169.274 176.598 169.274H184.463" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M184.462 169.244C178.442 169.244 173.572 155.589 173.572 138.754C173.572 121.918 178.442 108.263 184.462 108.263C190.482 108.263 195.352 121.918 195.352 138.754C195.352 155.589 190.482 169.244 184.462 169.244V169.244Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M101.098 159.797H107.178V189.652H101.098V159.797Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M87.4552 160.494H93.5352V190.349H87.4552V160.494Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M75.9298 161.129H82.0098V190.984H75.9298V161.129Z" stroke="#FF9658" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>          
-      </div>
 
-      <div class="project-container">
-        <div class="project-content">
-          <h3>MOONSHOT<br/>BOTS</h3>
-          <a class="link" href="https://www.moonshotbots.party/">[Find out more]</a>
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              archetypal<br />
+              character<br />
+              development
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg
+            width="124"
+            height="216"
+            viewBox="0 0 124 216"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="archetypal">
+              <g id="Group 15772">
+                <g id="Group 15768">
+                  <path
+                    id="Vector"
+                    d="M48.5745 78.4678V85.0919C48.5745 98.5633 37.6753 109.484 24.2301 109.484C11.3995 109.484 1 119.904 1 132.76V153.437C1 187.241 28.3494 214.651 62.0939 214.651C95.8316 214.651 123.188 187.248 123.188 153.437V132.76C123.188 119.904 112.788 109.484 99.9577 109.484C86.5126 109.484 75.6133 98.5633 75.6133 85.0919V78.4678"
+                    stroke="#51C3A6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M93.6375 42.8294C93.6375 64.3932 79.5103 81.8703 62.0809 81.8703C44.6516 81.8703 30.5244 64.3932 30.5244 42.8294C30.5244 21.2656 44.6583 10.5547 62.0877 10.5547C79.517 10.5547 93.6442 21.2656 93.6442 42.8294H93.6375Z"
+                    stroke="#51C3A6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <path
+                  class="green" fill="currentColor"
+                  d="M56.7879 27.9105C56.8211 27.8864 56.8528 27.8604 56.883 27.8327C56.8962 27.8197 56.9126 27.81 56.9257 27.797C56.9388 27.784 56.9765 27.7386 57.0027 27.7078L57.0404 27.664C57.0601 27.6364 57.0766 27.6072 57.093 27.5797C57.1094 27.5521 57.1225 27.5375 57.134 27.5148L57.1651 27.4418C57.1782 27.411 57.193 27.3818 57.2028 27.351L57.2192 27.2812C57.228 27.2503 57.2351 27.2189 57.2405 27.1872C57.2448 27.1587 57.2475 27.13 57.2487 27.1012C57.2487 27.0704 57.2487 27.0412 57.2487 27.012C57.2487 26.9828 57.2487 26.952 57.2487 26.9228C57.2476 26.894 57.2449 26.8653 57.2405 26.8368C57.2351 26.8051 57.228 26.7737 57.2192 26.7428L57.2028 26.673L57.1651 26.5822L57.134 26.5092L57.0913 26.4427C57.0759 26.4142 57.0589 26.3866 57.0404 26.36C57.029 26.3438 57.0126 26.3292 56.9994 26.313C56.9863 26.2967 56.952 26.2546 56.9257 26.227L56.8814 26.1897C56.8518 26.1625 56.8205 26.1371 56.7879 26.1135L39.2967 13.8357L58.7916 22.6799L58.7997 22.6799C58.8334 22.6943 58.868 22.7068 58.9031 22.7172C58.9244 22.7172 58.9457 22.7334 58.967 22.7399C58.9883 22.7464 59.0309 22.7529 59.0621 22.7578C59.0932 22.7626 59.1146 22.7691 59.1408 22.7724C59.167 22.7756 59.1949 22.7724 59.2212 22.7724C59.2474 22.7724 59.2868 22.7724 59.3196 22.7724C59.3524 22.7724 59.3638 22.7724 59.3867 22.7643C59.4097 22.7562 59.4605 22.7643 59.4966 22.7497C59.5195 22.7497 59.5392 22.7367 59.5605 22.7318C59.5819 22.7269 59.6277 22.714 59.6605 22.701C59.6933 22.688 59.7114 22.6783 59.7359 22.6669C59.7605 22.6556 59.7933 22.641 59.8212 22.6248C59.8491 22.6086 59.8688 22.594 59.8934 22.5761C59.919 22.5608 59.9436 22.5441 59.9672 22.5259C59.9913 22.5055 60.0143 22.4838 60.036 22.461C60.054 22.4447 60.0738 22.4285 60.0918 22.4107C60.1131 22.388 60.1295 22.362 60.1491 22.3377C60.1688 22.3134 60.1852 22.2939 60.2 22.2696C60.2147 22.2453 60.2213 22.2306 60.2328 22.2112C60.2443 22.1917 60.2705 22.148 60.2852 22.1155L60.3 22.0717C60.3172 22.0322 60.3314 21.9916 60.3426 21.9501C60.3462 21.9356 60.3489 21.921 60.3508 21.9063C60.3618 21.8631 60.3695 21.8192 60.3738 21.7749L62.3774 0.651366L64.381 21.7684C64.3868 21.8263 64.3967 21.8838 64.4105 21.9403L64.4105 21.9566C64.4242 22.0073 64.4412 22.0572 64.4613 22.1058L64.4728 22.1301C64.4941 22.1772 64.5188 22.2227 64.5466 22.2663L64.5565 22.2826C64.5843 22.3231 64.6155 22.3637 64.6483 22.4026L64.658 22.4139C64.658 22.4139 64.658 22.4139 64.658 22.422C64.658 22.4301 64.6941 22.4561 64.7122 22.4723C64.7339 22.4952 64.7569 22.5168 64.781 22.5372C64.8056 22.5566 64.8302 22.5713 64.8548 22.5875C64.8784 22.6052 64.9031 22.6214 64.9287 22.6361C64.9549 22.6524 64.9844 22.6637 65.0122 22.6783C65.0401 22.6929 65.0614 22.7026 65.0876 22.7124C65.121 22.7243 65.1549 22.7346 65.1893 22.7432C65.2106 22.7432 65.2303 22.7562 65.2516 22.761C65.2877 22.761 65.3237 22.7707 65.3614 22.7756C65.3992 22.7805 65.4057 22.7756 65.4287 22.7837C65.4517 22.7918 65.4943 22.7837 65.5271 22.7837C65.5599 22.7837 65.5796 22.7837 65.6058 22.7837C65.632 22.7837 65.6583 22.774 65.6845 22.7691C65.7165 22.7649 65.7483 22.7589 65.7796 22.7513C65.8009 22.7513 65.8222 22.7351 65.8452 22.7286C65.8681 22.7221 65.914 22.7059 65.9484 22.6913L85.4434 13.8471L67.9521 26.1248L67.9209 26.1491C67.8889 26.1734 67.8582 26.1994 67.8291 26.227L67.7914 26.2659C67.7652 26.2935 67.7405 26.3211 67.7176 26.3503L67.688 26.3892C67.6571 26.4321 67.6292 26.4771 67.6045 26.5238L67.6045 26.5336C67.5814 26.5791 67.5617 26.6263 67.5455 26.6746L67.5455 26.6925L67.5455 26.7184C67.534 26.7557 67.5258 26.793 67.5176 26.832L67.5094 26.8774C67.5022 26.9279 67.4984 26.9788 67.4979 27.0298C67.4984 27.0808 67.5022 27.1318 67.5094 27.1823L67.5176 27.2277C67.5258 27.265 67.534 27.3039 67.5455 27.3413L67.5455 27.3672L67.5455 27.385C67.5617 27.4334 67.5814 27.4805 67.6045 27.5261C67.6292 27.5734 67.6571 27.6189 67.688 27.6624L67.7176 27.6997C67.7404 27.7298 67.7651 27.7585 67.7914 27.7857L67.8274 27.823C67.8569 27.8505 67.8881 27.8765 67.9209 27.9024L67.9521 27.9267L85.4434 40.2045L65.9484 31.3587C65.914 31.3441 65.8796 31.3327 65.8452 31.3214C65.8238 31.3124 65.8019 31.3048 65.7796 31.2987C65.7484 31.2905 65.7156 31.2857 65.6845 31.2808C65.6533 31.276 65.632 31.2695 65.6058 31.2662C65.5796 31.263 65.5533 31.2662 65.5254 31.2662C65.4932 31.2646 65.4609 31.2646 65.4287 31.2662C65.4063 31.2646 65.3838 31.2646 65.3614 31.2662C65.3245 31.2686 65.2878 31.2735 65.2516 31.2808C65.2303 31.2808 65.2106 31.2938 65.1893 31.2987C65.1549 31.3072 65.121 31.3175 65.0876 31.3295C65.0614 31.3392 65.0385 31.3522 65.0122 31.3636C64.9835 31.376 64.9557 31.3901 64.9287 31.4057C64.9024 31.4203 64.8794 31.4365 64.8548 31.4527C64.8302 31.4689 64.8056 31.4852 64.781 31.5046C64.7564 31.5241 64.7351 31.5468 64.7122 31.5679C64.6892 31.589 64.6744 31.6003 64.658 31.6198L64.658 31.6279L64.6483 31.6393C64.6154 31.6771 64.5852 31.7172 64.5581 31.7593L64.5466 31.7739C64.5191 31.8183 64.4945 31.8643 64.4728 31.9117L64.4613 31.936C64.4412 31.9841 64.4242 32.0334 64.4105 32.0837L64.4105 32.1015C64.3966 32.158 64.3867 32.2155 64.381 32.2734L62.3774 53.3905L60.3738 32.2669C60.3691 32.2255 60.362 32.1843 60.3525 32.1437C60.3525 32.1274 60.3525 32.1096 60.3426 32.0934C60.3322 32.0552 60.3191 32.0178 60.3033 31.9815C60.2978 31.9633 60.2912 31.9454 60.2836 31.928C60.2694 31.8974 60.2535 31.8676 60.2361 31.8388C60.2246 31.8161 60.2131 31.7934 60.2 31.7723C60.1845 31.7496 60.1675 31.7279 60.1491 31.7074C60.1318 31.6812 60.1127 31.6562 60.0918 31.6328C60.0738 31.6133 60.054 31.5987 60.036 31.5809C60.018 31.563 59.9917 31.5371 59.9672 31.5176C59.9426 31.4982 59.918 31.4836 59.8934 31.4657C59.8688 31.4479 59.8458 31.4317 59.8212 31.4171C59.7966 31.4025 59.7638 31.3895 59.7359 31.3765C59.7081 31.3635 59.6868 31.3522 59.6605 31.3424C59.6343 31.3327 59.5933 31.3214 59.5605 31.3116C59.5277 31.3019 59.5195 31.297 59.4966 31.2922C59.4598 31.2849 59.4226 31.2801 59.3851 31.2776C59.3628 31.2759 59.3403 31.2759 59.3179 31.2776C59.2857 31.276 59.2534 31.276 59.2212 31.2776C59.1949 31.2776 59.167 31.2776 59.1408 31.2776C59.1148 31.2809 59.0891 31.2857 59.0638 31.2922C59.0312 31.2964 58.9989 31.3024 58.967 31.31C58.9452 31.3161 58.9239 31.3237 58.9031 31.3327C58.8677 31.3425 58.8331 31.3549 58.7997 31.37C58.7997 31.37 58.7998 31.37 58.7916 31.37L39.2983 40.2142L56.7879 27.9105Z"
+                  fill="#2D2038"
+                  stroke="#51C3A6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </g>
+          </svg>
         </div>
-        <svg width="226" height="235" viewBox="0 0 226 235" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M183.459 109.126C183.459 94.5601 152.065 82.751 113.337 82.751C74.6085 82.751 43.2148 94.5601 43.2148 109.126L58.6522 194.287C59.8654 200.976 65.6715 205.836 72.4488 205.836H154.222C160.999 205.836 166.809 200.976 168.018 194.287L183.456 109.126H183.459Z" stroke="#F4E5C9" stroke-miterlimit="10"/>
-          <path d="M43.2148 109.126C43.2148 70.2807 74.6085 38.792 113.337 38.792C152.065 38.792 183.459 70.2807 183.459 109.126" stroke="#F4E5C9" stroke-miterlimit="10"/>
-          <path d="M183.46 30V109.126" stroke="#F4E5C9" stroke-miterlimit="10"/>
-          <path d="M43.2148 47.584V109.127" stroke="#F4E5C9" stroke-miterlimit="10"/>
-          <path class="fill" d="M122.103 110.708H104.573C94.8907 110.708 87.042 118.581 87.042 128.292C87.042 138.003 94.8907 145.876 104.573 145.876H122.103C131.785 145.876 139.634 138.003 139.634 128.292C139.634 118.581 131.785 110.708 122.103 110.708Z" fill="currentColor" stroke="#51C3A6" stroke-miterlimit="10"/>
-          <path d="M135.251 106.313H91.4249C79.3226 106.313 69.5117 116.154 69.5117 128.293C69.5117 140.431 79.3226 150.272 91.4249 150.272H135.251C147.354 150.272 157.164 140.431 157.164 128.293C157.164 116.154 147.354 106.313 135.251 106.313Z" stroke="#FF9658" stroke-miterlimit="10"/>
-          <path d="M54.7861 170.669H172.591" stroke="#F4E5C9" stroke-miterlimit="10"/>
-          <path d="M67.1299 177.703C74.8293 177.703 74.8293 188.956 82.5322 188.956C90.2351 188.956 90.2316 177.703 97.9346 177.703C105.637 177.703 105.634 188.956 113.337 188.956C121.04 188.956 121.036 177.703 128.739 177.703C136.442 177.703 136.442 188.956 144.142 188.956C151.841 188.956 151.844 177.703 159.544 177.703" stroke="#FF9658" stroke-miterlimit="10"/>
-          <path d="M58.8174 194.934H167.507" stroke="#F4E5C9" stroke-miterlimit="10"/>
-        </svg>
-      </div>
 
-      <div class="project-container">
-        <div class="project-content">
-          <h3>$SACKS</h3>
-          <a class="link" href="https://store.gitcoin.co/products/sacks?_pos=2&_sid=0ca4b4712&_ss=r">[Find out more]</a>
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              techno-feminine<br />
+              responses to<br />
+              the pluriverse
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg
+            width="188"
+            height="216"
+            viewBox="0 0 188 216"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="techno">
+              <g id="Greenpill">
+                <path
+                  id="Vector"
+                  d="M97.0929 125.271C97.0192 125.17 96.9401 125.074 96.8557 124.983C96.8162 124.943 96.7866 124.893 96.747 124.854C96.7075 124.814 96.5691 124.7 96.4753 124.621L96.3419 124.506C96.2579 124.447 96.1689 124.397 96.0849 124.347C96.0009 124.298 95.9565 124.258 95.8874 124.223L95.6649 124.129C95.571 124.089 95.4822 124.045 95.3883 124.015L95.1758 123.965C95.0815 123.939 94.9859 123.917 94.8893 123.901C94.8025 123.888 94.7151 123.88 94.6274 123.876C94.5336 123.876 94.4446 123.876 94.3557 123.876C94.2667 123.876 94.1728 123.876 94.0839 123.876C93.9962 123.88 93.9088 123.888 93.822 123.901C93.7254 123.917 93.6298 123.939 93.5356 123.965L93.323 124.015L93.0464 124.129L92.824 124.223L92.6215 124.353C92.5347 124.399 92.4505 124.45 92.3695 124.506C92.3201 124.541 92.2756 124.591 92.2262 124.63C92.1768 124.67 92.0483 124.774 91.9643 124.854L91.8507 124.988C91.768 125.077 91.6905 125.172 91.6185 125.271L54.2171 178.208L81.159 119.207V119.182C81.2028 119.08 81.2407 118.975 81.2726 118.869C81.2726 118.805 81.3219 118.74 81.3417 118.676C81.3615 118.611 81.3813 118.482 81.3961 118.388C81.4109 118.294 81.4306 118.229 81.4405 118.15C81.4504 118.07 81.4405 117.986 81.4405 117.906C81.4405 117.827 81.4405 117.708 81.4405 117.609C81.4405 117.509 81.4406 117.475 81.4159 117.405C81.3912 117.336 81.4158 117.182 81.3714 117.073C81.3714 117.003 81.3318 116.944 81.317 116.879C81.3022 116.815 81.2627 116.676 81.2231 116.577C81.1836 116.477 81.154 116.423 81.1194 116.348C81.0848 116.274 81.0403 116.175 80.9909 116.09C80.9415 116.006 80.897 115.946 80.8427 115.872C80.7962 115.794 80.7451 115.72 80.6896 115.649C80.6276 115.576 80.5616 115.506 80.4919 115.44C80.4425 115.386 80.3931 115.326 80.3387 115.271C80.2695 115.207 80.1905 115.157 80.1164 115.098C80.0423 115.038 79.9831 114.989 79.9089 114.944C79.8348 114.899 79.7903 114.879 79.731 114.845C79.6717 114.81 79.5384 114.731 79.4396 114.686L79.3062 114.641C79.1859 114.589 79.062 114.546 78.9356 114.512C78.8916 114.502 78.8471 114.493 78.8022 114.488C78.6707 114.454 78.5369 114.431 78.402 114.418L14.0537 108.354L78.3822 102.29C78.5586 102.273 78.7336 102.243 78.9059 102.201H78.9554C79.11 102.159 79.2618 102.108 79.4099 102.047L79.484 102.012C79.6274 101.948 79.7661 101.873 79.899 101.789L79.9485 101.759C80.072 101.675 80.1955 101.58 80.3141 101.481L80.3486 101.452C80.3486 101.452 80.3486 101.452 80.3733 101.452C80.398 101.452 80.4771 101.342 80.5265 101.288C80.5962 101.222 80.6621 101.153 80.7241 101.08C80.7834 101.005 80.8279 100.931 80.8773 100.856C80.9312 100.785 80.9807 100.71 81.0255 100.633C81.075 100.553 81.1095 100.464 81.154 100.38C81.1985 100.295 81.2281 100.231 81.2578 100.152C81.2942 100.051 81.3255 99.9479 81.3516 99.8438C81.3516 99.7793 81.3912 99.7198 81.406 99.6553C81.406 99.5461 81.4356 99.437 81.4504 99.3229C81.4652 99.2087 81.4504 99.1888 81.4751 99.1193C81.4998 99.0499 81.4751 98.9208 81.4751 98.8215C81.4751 98.7223 81.4751 98.6628 81.4751 98.5834C81.4751 98.504 81.4455 98.4246 81.4307 98.3452C81.4178 98.2483 81.3996 98.1522 81.3763 98.0573C81.3763 97.9928 81.327 97.9284 81.3072 97.8589C81.2874 97.7894 81.2379 97.6505 81.1935 97.5463L54.2517 38.5449L91.6531 91.4823L91.7272 91.5766C91.8011 91.6735 91.8802 91.7663 91.9643 91.8545L92.0829 91.9686C92.1669 92.048 92.2509 92.1225 92.3398 92.192L92.4584 92.2814C92.5892 92.3751 92.7262 92.4595 92.8685 92.5344H92.8982C93.0371 92.6041 93.1806 92.6637 93.328 92.713H93.3824H93.4614C93.575 92.7477 93.6886 92.7725 93.8072 92.7973L93.9456 92.8222C94.0995 92.8438 94.2546 92.8554 94.41 92.8569C94.5653 92.8554 94.7206 92.8438 94.8745 92.8222L95.0128 92.7973C95.1265 92.7725 95.245 92.7477 95.3587 92.713H95.4377H95.4921C95.6394 92.6637 95.783 92.6041 95.9219 92.5344C96.0657 92.4596 96.2045 92.3751 96.3369 92.2814L96.4505 92.192C96.5423 92.123 96.6297 92.0483 96.7124 91.9686L96.826 91.8596C96.91 91.7703 96.9891 91.6758 97.0681 91.5766L97.1422 91.4823L134.544 38.5449L107.597 97.5463C107.552 97.6505 107.518 97.7547 107.483 97.8589C107.456 97.9234 107.433 97.9897 107.414 98.0573C107.389 98.1516 107.375 98.2509 107.36 98.3452C107.345 98.4395 107.325 98.504 107.315 98.5834C107.305 98.6628 107.315 98.7423 107.315 98.8266C107.31 98.9242 107.31 99.0218 107.315 99.1193C107.31 99.1871 107.31 99.2551 107.315 99.3229C107.322 99.4346 107.337 99.5456 107.36 99.6553C107.36 99.7198 107.399 99.7793 107.414 99.8438C107.44 99.9479 107.471 100.051 107.508 100.152C107.538 100.231 107.577 100.3 107.612 100.38C107.65 100.467 107.692 100.551 107.74 100.633C107.785 100.712 107.834 100.782 107.883 100.856C107.933 100.931 107.982 101.005 108.042 101.08C108.101 101.154 108.17 101.218 108.234 101.288C108.298 101.357 108.333 101.402 108.392 101.452H108.417L108.452 101.481C108.567 101.581 108.689 101.672 108.817 101.754L108.862 101.789C108.997 101.872 109.137 101.947 109.282 102.012L109.356 102.047C109.502 102.108 109.652 102.159 109.805 102.201H109.86C110.032 102.243 110.207 102.273 110.383 102.29L174.712 108.354L110.364 114.418C110.237 114.432 110.112 114.454 109.988 114.483C109.939 114.483 109.884 114.483 109.835 114.512C109.719 114.544 109.605 114.583 109.494 114.631C109.439 114.648 109.384 114.668 109.331 114.691C109.238 114.734 109.147 114.782 109.059 114.835C108.99 114.87 108.921 114.904 108.857 114.944C108.788 114.991 108.722 115.042 108.659 115.098C108.579 115.15 108.503 115.208 108.432 115.271C108.373 115.326 108.328 115.386 108.274 115.44C108.219 115.495 108.14 115.574 108.081 115.649C108.022 115.723 107.977 115.797 107.923 115.872C107.869 115.946 107.819 116.016 107.775 116.09C107.73 116.165 107.691 116.264 107.651 116.348C107.612 116.433 107.577 116.497 107.547 116.577C107.518 116.656 107.483 116.78 107.454 116.879C107.424 116.979 107.409 117.003 107.394 117.073C107.372 117.184 107.357 117.297 107.35 117.41C107.345 117.478 107.345 117.546 107.35 117.614C107.345 117.711 107.345 117.809 107.35 117.906C107.35 117.986 107.35 118.07 107.35 118.15C107.36 118.228 107.375 118.306 107.394 118.383C107.407 118.481 107.425 118.579 107.449 118.676C107.467 118.742 107.49 118.806 107.518 118.869C107.547 118.976 107.585 119.081 107.631 119.182C107.631 119.182 107.631 119.182 107.631 119.207L134.573 178.203L97.0929 125.271Z"
+                  stroke="#51C3A6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_2"
+                  d="M71.6028 112.045C71.7358 111.947 71.8632 111.842 71.9844 111.729C72.037 111.677 72.1029 111.637 72.1555 111.585C72.2082 111.532 72.3593 111.348 72.4645 111.223L72.6158 111.045C72.6947 110.933 72.7607 110.815 72.8265 110.703C72.8923 110.591 72.9449 110.532 72.9909 110.44L73.1159 110.143C73.1685 110.018 73.2277 109.9 73.2671 109.775L73.333 109.492C73.3684 109.366 73.3969 109.239 73.4184 109.11C73.4356 108.995 73.4464 108.878 73.4512 108.761C73.4512 108.636 73.4512 108.518 73.4512 108.399C73.4512 108.281 73.4512 108.156 73.4512 108.037C73.4467 107.921 73.4359 107.804 73.4184 107.689C73.3969 107.56 73.3684 107.433 73.333 107.307L73.2671 107.024L73.1159 106.655L72.9909 106.359L72.8197 106.089C72.7581 105.974 72.69 105.862 72.6158 105.754C72.5698 105.688 72.504 105.629 72.4514 105.563C72.3987 105.497 72.2608 105.326 72.1555 105.214L71.9779 105.063C71.8589 104.953 71.7336 104.849 71.6028 104.753L1.43135 54.9339L79.641 90.8211L79.6737 90.8211C79.8089 90.8794 79.9475 90.93 80.0884 90.9724C80.1739 90.9724 80.2592 91.0382 80.3447 91.0645C80.4302 91.0908 80.6013 91.1172 80.7262 91.137C80.8512 91.1567 80.9367 91.1829 81.042 91.1961C81.1472 91.2093 81.2592 91.1961 81.3644 91.1961C81.4697 91.1961 81.6276 91.1961 81.7592 91.1961C81.8907 91.1961 81.9365 91.1962 82.0286 91.1633C82.1207 91.1304 82.3246 91.1633 82.4693 91.104C82.5614 91.104 82.6404 91.0513 82.7259 91.0316C82.8114 91.0118 82.9955 90.9592 83.1271 90.9066C83.2586 90.8539 83.3309 90.8145 83.4296 90.7684C83.5283 90.7223 83.6598 90.6631 83.7717 90.5973C83.8835 90.5315 83.9627 90.4722 84.0614 90.3998C84.1641 90.3379 84.2627 90.2699 84.3572 90.1959C84.454 90.1133 84.5462 90.0253 84.6334 89.9326C84.7058 89.8668 84.7849 89.8009 84.8573 89.7285C84.9428 89.6364 85.0083 89.5311 85.0872 89.4324C85.1662 89.3337 85.232 89.2548 85.2912 89.156C85.3504 89.0573 85.3768 88.998 85.4229 88.919C85.4689 88.8401 85.574 88.6625 85.6332 88.5309L85.6926 88.3532C85.7613 88.1929 85.8183 88.028 85.8635 87.8596C85.8777 87.801 85.8885 87.7416 85.8963 87.6819C85.9402 87.5067 85.9711 87.3285 85.9885 87.1487L94.0266 1.43554L102.064 87.1224C102.088 87.3574 102.128 87.5905 102.183 87.82L102.183 87.8859C102.238 88.0919 102.306 88.294 102.387 88.4913L102.433 88.59C102.518 88.781 102.618 88.9658 102.729 89.1429L102.769 89.2087C102.88 89.3733 103.005 89.5378 103.137 89.6957L103.176 89.7417C103.176 89.7417 103.176 89.7417 103.176 89.7746C103.176 89.8075 103.321 89.9129 103.393 89.9787C103.48 90.0715 103.573 90.1593 103.669 90.2419C103.768 90.3208 103.867 90.3801 103.966 90.4459C104.06 90.5177 104.159 90.5837 104.262 90.6434C104.367 90.7092 104.485 90.7553 104.597 90.8145C104.709 90.8737 104.794 90.9132 104.9 90.9527C105.033 91.0013 105.169 91.043 105.307 91.0777C105.393 91.0777 105.472 91.1304 105.557 91.1502C105.702 91.1502 105.847 91.1895 105.998 91.2093C106.149 91.229 106.176 91.2093 106.268 91.2422C106.36 91.2751 106.531 91.2422 106.663 91.2422C106.794 91.2422 106.873 91.2422 106.978 91.2422C107.083 91.2422 107.189 91.2028 107.294 91.1831C107.422 91.1659 107.55 91.1417 107.676 91.1106C107.761 91.1106 107.846 91.0449 107.939 91.0186C108.031 90.9922 108.215 90.9263 108.353 90.867L186.562 54.98L116.391 104.8L116.266 104.898C116.138 104.997 116.015 105.102 115.898 105.214L115.746 105.372C115.641 105.484 115.542 105.596 115.45 105.714L115.332 105.872C115.208 106.046 115.096 106.229 114.996 106.418L114.996 106.458C114.904 106.643 114.825 106.834 114.76 107.03L114.76 107.103L114.76 107.208C114.714 107.36 114.681 107.511 114.648 107.669L114.615 107.853C114.586 108.058 114.571 108.265 114.569 108.472C114.571 108.679 114.586 108.885 114.615 109.09L114.648 109.275C114.681 109.426 114.714 109.584 114.76 109.735L114.76 109.841L114.76 109.913C114.825 110.109 114.904 110.301 114.996 110.486C115.096 110.677 115.208 110.862 115.332 111.038L115.45 111.19C115.542 111.312 115.641 111.428 115.746 111.539L115.891 111.69C116.009 111.802 116.135 111.907 116.266 112.012L116.391 112.111L186.562 161.931L108.353 126.037C108.215 125.978 108.077 125.932 107.939 125.886C107.853 125.849 107.765 125.818 107.676 125.793C107.551 125.76 107.419 125.741 107.294 125.721C107.169 125.701 107.083 125.675 106.978 125.662C106.873 125.649 106.768 125.662 106.656 125.662C106.526 125.655 106.397 125.655 106.268 125.662C106.178 125.655 106.088 125.655 105.998 125.662C105.85 125.671 105.703 125.691 105.557 125.721C105.472 125.721 105.393 125.774 105.307 125.793C105.169 125.828 105.033 125.87 104.9 125.918C104.794 125.958 104.702 126.011 104.597 126.057C104.482 126.107 104.37 126.164 104.262 126.228C104.156 126.287 104.064 126.353 103.966 126.419C103.867 126.484 103.768 126.55 103.669 126.629C103.571 126.708 103.485 126.8 103.393 126.886C103.301 126.972 103.242 127.017 103.176 127.096L103.176 127.129L103.137 127.175C103.005 127.329 102.884 127.492 102.775 127.662L102.729 127.722C102.619 127.902 102.52 128.089 102.433 128.281L102.387 128.38C102.306 128.575 102.238 128.775 102.183 128.979L102.183 129.051C102.127 129.28 102.087 129.514 102.064 129.749L94.0266 215.436L85.9885 129.722C85.9696 129.554 85.9411 129.387 85.903 129.222C85.903 129.156 85.903 129.084 85.8635 129.018C85.8218 128.863 85.7692 128.711 85.7058 128.564C85.6835 128.49 85.6571 128.418 85.6268 128.347C85.5698 128.223 85.5061 128.102 85.436 127.985C85.39 127.893 85.3438 127.801 85.2912 127.715C85.229 127.623 85.1608 127.535 85.0872 127.452C85.0179 127.346 84.9412 127.244 84.8573 127.149C84.7849 127.07 84.7058 127.011 84.6334 126.939C84.561 126.866 84.4558 126.761 84.3572 126.682C84.2585 126.603 84.16 126.544 84.0614 126.471C83.9627 126.399 83.8703 126.333 83.7717 126.274C83.673 126.215 83.5414 126.162 83.4296 126.109C83.3178 126.057 83.2323 126.011 83.1271 125.971C83.0218 125.932 82.8575 125.886 82.7259 125.846C82.5943 125.807 82.5614 125.787 82.4693 125.767C82.3216 125.738 82.1724 125.718 82.0222 125.708C81.9324 125.701 81.8422 125.701 81.7524 125.708C81.6231 125.701 81.4937 125.701 81.3644 125.708C81.2592 125.708 81.1472 125.708 81.042 125.708C80.9378 125.721 80.8347 125.741 80.733 125.767C80.6024 125.784 80.4727 125.808 80.3447 125.839C80.2571 125.864 80.1717 125.895 80.0884 125.932C79.9465 125.971 79.8077 126.022 79.6737 126.083C79.6737 126.083 79.6739 126.083 79.641 126.083L1.43777 161.97L71.6028 112.045Z"
+                  fill="#2D2038"
+                  stroke="#51C3A6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="green" fill="currentColor"
+                  d="M91.1735 117.12C91.1662 117.051 91.155 116.983 91.14 116.915C91.1321 116.885 91.1318 116.853 91.1239 116.823C91.116 116.793 91.0815 116.7 91.0586 116.636L91.0265 116.544C91.0028 116.492 90.974 116.443 90.9476 116.396C90.9212 116.349 90.911 116.317 90.8875 116.281L90.8072 116.174C90.7732 116.129 90.7431 116.083 90.7064 116.043L90.6184 115.96C90.5807 115.921 90.5409 115.884 90.4991 115.85C90.4611 115.82 90.4215 115.791 90.3805 115.765C90.3356 115.74 90.2929 115.715 90.2503 115.69C90.2077 115.666 90.1627 115.64 90.1201 115.615C90.0772 115.592 90.033 115.572 89.9878 115.555C89.937 115.536 89.8852 115.52 89.8326 115.506L89.7169 115.472L89.5526 115.45L89.4198 115.434L89.2868 115.44C89.2323 115.439 89.1777 115.44 89.1233 115.445C89.0899 115.448 89.0548 115.46 89.0201 115.465C88.9854 115.47 88.8948 115.485 88.8325 115.5L88.7407 115.533C88.6761 115.554 88.6126 115.578 88.5507 115.606L55.8927 130.788L85.2278 109.788L85.2347 109.776C85.2841 109.739 85.3314 109.699 85.3762 109.657C85.3942 109.626 85.4358 109.608 85.4632 109.583C85.4906 109.557 85.536 109.5 85.5694 109.459C85.6027 109.418 85.6301 109.392 85.657 109.356C85.6838 109.321 85.7026 109.277 85.7247 109.239C85.7468 109.201 85.78 109.143 85.8076 109.095C85.8352 109.048 85.8449 109.031 85.8524 108.991C85.8599 108.95 85.9146 108.883 85.9237 108.818C85.943 108.784 85.9406 108.745 85.9515 108.71C85.9624 108.674 85.9821 108.596 85.9908 108.538C85.9995 108.479 86.0005 108.444 86.0046 108.399C86.0088 108.353 86.0151 108.293 86.0149 108.239C86.0147 108.185 86.0101 108.143 86.0048 108.092C86.004 108.042 86.0003 107.992 85.9936 107.943C85.9842 107.89 85.9719 107.838 85.9568 107.787C85.9484 107.747 85.9413 107.705 85.9305 107.664C85.9153 107.613 85.8912 107.568 85.8723 107.518C85.8533 107.469 85.8388 107.429 85.8157 107.387C85.7926 107.345 85.7769 107.323 85.7581 107.29C85.7394 107.257 85.6976 107.181 85.6627 107.133L85.6112 107.074C85.568 107.016 85.5207 106.961 85.4696 106.909C85.4515 106.892 85.4324 106.876 85.4126 106.861C85.3588 106.808 85.3012 106.76 85.2402 106.716L56.099 85.9926L88.6073 100.862C88.6967 100.903 88.7889 100.937 88.8831 100.964L88.9068 100.978C88.9925 101.001 89.0795 101.018 89.1674 101.029L89.2125 101.033C89.2992 101.042 89.3865 101.044 89.4736 101.04L89.5056 101.04C89.5883 101.033 89.6737 101.022 89.7581 101.007L89.7829 101.002C89.7829 101.002 89.7829 101.002 89.7947 101.009C89.8066 101.016 89.8749 100.985 89.9137 100.972C89.9654 100.96 90.0164 100.944 90.0664 100.926C90.1155 100.907 90.1576 100.883 90.202 100.861C90.2477 100.841 90.2922 100.819 90.3352 100.794C90.381 100.77 90.4224 100.736 90.4672 100.708C90.512 100.679 90.5441 100.656 90.5805 100.626C90.626 100.588 90.6696 100.547 90.7111 100.504C90.7291 100.473 90.7646 100.455 90.7896 100.428C90.82 100.375 90.8646 100.331 90.9035 100.28C90.9423 100.229 90.9408 100.215 90.972 100.189C91.0032 100.162 91.0273 100.093 91.0549 100.045C91.0825 99.9973 91.0991 99.9686 91.1212 99.9303C91.1433 99.892 91.1512 99.8456 91.1662 99.8032C91.187 99.7529 91.2051 99.7015 91.2203 99.6493C91.2383 99.6182 91.2326 99.5735 91.2425 99.5345C91.2523 99.4955 91.2673 99.4149 91.275 99.3523L94.7942 63.4473L97.9746 99.3213L97.9838 99.3872C97.9922 99.4544 98.0043 99.521 98.0201 99.5868L98.0451 99.6747C98.0632 99.7362 98.0827 99.7954 98.106 99.8535L98.1379 99.9294C98.1745 100.011 98.2166 100.089 98.264 100.165L98.2782 100.173C98.3253 100.245 98.3775 100.314 98.4344 100.378L98.4604 100.393L98.4983 100.415C98.5431 100.463 98.5906 100.506 98.6405 100.551L98.6998 100.602C98.7676 100.655 98.8387 100.703 98.9127 100.747C98.9876 100.789 99.0651 100.826 99.1449 100.858L99.2181 100.885C99.2795 100.904 99.3432 100.925 99.4073 100.94L99.4452 100.962L99.4712 100.977C99.5555 100.994 99.6409 101.005 99.7268 101.009C99.8166 101.013 99.9066 101.011 99.9961 101.002L100.075 100.991C100.139 100.983 100.201 100.971 100.263 100.955L100.348 100.934C100.413 100.914 100.477 100.891 100.543 100.865L100.604 100.84L133.262 85.657L103.925 106.656C103.875 106.694 103.829 106.734 103.784 106.775C103.752 106.799 103.723 106.824 103.695 106.852C103.657 106.89 103.622 106.934 103.589 106.975C103.556 107.017 103.528 107.042 103.501 107.078C103.474 107.114 103.457 107.155 103.434 107.195C103.404 107.241 103.377 107.288 103.352 107.336C103.331 107.368 103.312 107.401 103.295 107.435C103.268 107.49 103.244 107.548 103.224 107.607C103.206 107.638 103.209 107.678 103.198 107.713C103.181 107.771 103.168 107.829 103.157 107.887C103.149 107.934 103.149 107.978 103.143 108.026C103.137 108.079 103.134 108.131 103.134 108.184C103.134 108.234 103.138 108.282 103.141 108.331C103.144 108.381 103.147 108.43 103.154 108.483C103.162 108.535 103.177 108.585 103.189 108.636C103.2 108.688 103.204 108.719 103.219 108.759L103.231 108.766L103.239 108.79C103.266 108.87 103.3 108.948 103.338 109.023L103.35 109.052C103.391 109.129 103.438 109.204 103.489 109.275L103.515 109.313C103.568 109.383 103.625 109.449 103.687 109.511L103.713 109.526C103.784 109.594 103.859 109.657 103.939 109.714L133.071 130.432L100.553 115.557C100.489 115.529 100.423 115.505 100.355 115.484C100.332 115.471 100.306 115.456 100.274 115.456C100.209 115.439 100.143 115.427 100.077 115.42C100.046 115.412 100.014 115.407 99.9825 115.403C99.9259 115.398 99.8691 115.396 99.8122 115.397C99.7694 115.395 99.7266 115.393 99.6848 115.394C99.6386 115.398 99.5926 115.404 99.5472 115.414C99.4944 115.417 99.4419 115.424 99.39 115.434C99.3464 115.444 99.3085 115.461 99.2672 115.472C99.226 115.483 99.166 115.5 99.1169 115.519C99.0678 115.539 99.0258 115.562 98.979 115.583C98.9323 115.604 98.8892 115.624 98.8471 115.648C98.8051 115.671 98.7586 115.708 98.7161 115.738C98.6737 115.768 98.6392 115.789 98.6029 115.819C98.5666 115.849 98.5155 115.9 98.4737 115.939C98.4318 115.979 98.4178 115.987 98.3913 116.016C98.3497 116.064 98.3113 116.114 98.2762 116.167C98.2548 116.198 98.2359 116.231 98.2195 116.265C98.19 116.31 98.1628 116.357 98.138 116.406C98.1159 116.444 98.0924 116.485 98.0703 116.523C98.0532 116.564 98.0386 116.605 98.0266 116.648C98.0054 116.699 97.9868 116.751 97.9711 116.804C97.9617 116.841 97.9548 116.879 97.9504 116.916C97.9348 116.976 97.9239 117.037 97.9178 117.099C97.9178 117.099 97.9178 117.099 97.9109 117.111L94.3931 153.013L91.1735 117.12Z"
+                  fill="#2D2038"
+                  stroke="#51C3A6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </g>
+          </svg>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="226" height="226" viewBox="0 0 226 226" fill="none" xmlns:v="https://vecta.io/nano">
-          <path d="M113.5 61.5v-48m30 140.5l33.5 35m-93.5-35l-35 34.5m114-92l47.5-9m-145.5 9L16 86" stroke="#ff9658"/>
-          <path fill="currentColor" class="fill" stroke="#51C3A6" d="M125.811 94.935c-.242-.946.902-1.606 1.606-.924l10.491 10.496a.94.94 0 0 1 0 1.342l-13.725 13.752a.94.94 0 0 1-1.341 0l-.902-.902c-1.298-1.298-1.54-3.322-.418-5.017.484-.726 1.254-1.232 2.112-1.452l1.869-.506c.352-.088.704-.22 1.012-.44 1.979-1.342 2.749-3.565 2.199-5.611l-2.903-10.738zm-23.953-4.181a.96.96 0 0 0 .418 1.606l12.361 3.323c1.298.352 2.376 1.188 3.058 2.354.66 1.144.835 2.552.484 3.872l-.55 2.047c-.066.286-.088.572-.022.858.594 2.574 2.837 3.806 4.949 3.234l1.473-.396a.72.72 0 0 0 .506-.858l-5.411-20.683c-.087-.33-.264-.66-.505-.902l-4.927-4.929c-.374-.374-.968-.374-1.342 0l-10.492 10.474zm22.545 44.492a.96.96 0 0 0-.417-1.606l-12.362-3.323c-1.298-.352-2.376-1.188-3.058-2.354-.659-1.145-.835-2.553-.483-3.873l.549-2.046a1.89 1.89 0 0 0 .023-.859c-.594-2.574-2.838-3.806-4.949-3.234l-1.474.396a.72.72 0 0 0-.506.858l5.411 20.684c.088.33.264.66.506.902l4.927 4.929a.94.94 0 0 0 1.341 0l10.492-10.474zm21.314-22.906l-3.409-3.411c-.374-.374-.968-.374-1.342 0l-14.143 14.149c-.264.264-.572.506-.924.682-2.156 1.034-4.443.594-5.939-.902l-1.078-1.078c-.747-.749-1.715-1.145-2.727-1.145-.792 0-1.584.242-2.331.748-.704.485-1.188 1.255-1.408 2.069l-.396 1.496c-.044.198-.044.396.044.55.088.176.242.308.44.352l16.1 4.313c.33.088.682 0 .924-.242l16.211-16.217c.352-.396.352-1.012-.022-1.364zm-62.203 4.555a.94.94 0 0 0 1.342 0l14.121-14.083c1.517-1.518 3.805-1.936 5.96-.902.33.154.638.396.902.682l1.782 1.783a1.95 1.95 0 0 0 .726.462c2.529.77 4.707-.55 5.279-2.663l.396-1.452c.043-.198.043-.396-.045-.55-.087-.176-.241-.308-.439-.352l-15.837-4.247c-.33-.088-.682 0-.924.242L80.28 112.318c-.374.374-.374.968 0 1.342l3.233 3.235zm13.813 3.102c-.55-2.068.22-4.29 2.222-5.633.308-.198.659-.33 1.011-.44l1.87-.506c.858-.22 1.628-.726 2.111-1.452 1.122-1.694.88-3.697-.417-5.017l-1.078-1.078a.72.72 0 0 0-.99 0l-14.099 14.104c-.374.374-.374.968 0 1.342l10.778 10.826c.682.682 1.847.022 1.605-.924l-3.013-11.222zm15.683-11.772a4.77 4.77 0 1 0 0 9.55 4.77 4.77 0 1 0 0-9.55z"/>
-          <g stroke="#f4e5c9">
-            <circle cx="113" cy="113" r="99.5"/>
-            <path d="M113.5 61l48.979 35.586-18.708 57.578H83.229L64.521 96.586 113.5 61z"/>
-          </g>
-        </svg>
-      </div>
 
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-container">
-      <div>
-      <a class="link" href="https://drive.google.com/drive/folders/1__K_tTmJViz0ukN8dE9GmuXErsxrlOQO">
-        [Fork this book]
-      </a>
+        <!-- <svg
+            width="226"
+            height="235"
+            viewBox="0 0 226 235"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M183.459 109.126C183.459 94.5601 152.065 82.751 113.337 82.751C74.6085 82.751 43.2148 94.5601 43.2148 109.126L58.6522 194.287C59.8654 200.976 65.6715 205.836 72.4488 205.836H154.222C160.999 205.836 166.809 200.976 168.018 194.287L183.456 109.126H183.459Z"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M43.2148 109.126C43.2148 70.2807 74.6085 38.792 113.337 38.792C152.065 38.792 183.459 70.2807 183.459 109.126"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M183.46 30V109.126"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M43.2148 47.584V109.127"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              class="fill"
+              d="M122.103 110.708H104.573C94.8907 110.708 87.042 118.581 87.042 128.292C87.042 138.003 94.8907 145.876 104.573 145.876H122.103C131.785 145.876 139.634 138.003 139.634 128.292C139.634 118.581 131.785 110.708 122.103 110.708Z"
+              fill="currentColor"
+              stroke="#51C3A6"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M135.251 106.313H91.4249C79.3226 106.313 69.5117 116.154 69.5117 128.293C69.5117 140.431 79.3226 150.272 91.4249 150.272H135.251C147.354 150.272 157.164 140.431 157.164 128.293C157.164 116.154 147.354 106.313 135.251 106.313Z"
+              stroke="#FF9658"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M54.7861 170.669H172.591"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M67.1299 177.703C74.8293 177.703 74.8293 188.956 82.5322 188.956C90.2351 188.956 90.2316 177.703 97.9346 177.703C105.637 177.703 105.634 188.956 113.337 188.956C121.04 188.956 121.036 177.703 128.739 177.703C136.442 177.703 136.442 188.956 144.142 188.956C151.841 188.956 151.844 177.703 159.544 177.703"
+              stroke="#FF9658"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M58.8174 194.934H167.507"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+          </svg> -->
       </div>
-      <p>Fund the pluriverse.wtf &nbsp;&nbsp;
-        <a class="link" href="https://gitcoin.co/grants/7369/a-dao-for-the-pluriverse">
-          [Grants]</a>
-        &nbsp;
-        <a class="link" href="https://yeet.daohaus.club/dao/0x64/0x06b109353f6f2b5c028b9493f0787127bc6e1560/1">
-          [Y33T]
-        </a>
-      </p>
-      
+    </section>
+
+    <section class="projects">
+      <h2 class="main-text projects-title">Infinite Projects</h2>
+      <div class="projects-container">
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              illustrated<br />
+              novels
+            </h3>
+            <a class="link" href="https://store.gitcoin.co/products/gitcoin-comic-3-raid-guild-mercenaries-the-phantasmagoric-molochdigital-edition?pr_prod_strat=copurchase&pr_rec_id=c6efed1f2&pr_rec_pid=7545812287723&pr_ref_pid=7064734826648&pr_seq=uniform">[Find out more]</a>
+          </div>
+          <svg width="166" height="214" viewBox="0 0 166 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="novels">
+            <g id="helmet">
+            <path id="Vector" d="M106.364 53.5442C88.4207 49.134 65.6442 54.052 49.7033 66.5876" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_2" d="M39.1827 77.439C38.7821 78.0003 38.3549 78.615 37.9544 79.1763C26.259 96.817 26.98 120.498 28.048 157.383C28.3952 170.32 30.6114 188.067 30.6114 188.067L46.0984 194.001L43.7486 140.357L33.8423 132.633L34.0025 112.694L34.1627 103.633L40.5444 107.161L64.1487 120.258L82.4394 112.48L107.058 102.002L116.564 97.9663L116.778 97.8594L116.831 101.04V101.094L117.285 124.427L86.5781 138.941L87.9132 193.787C87.9132 193.787 125.99 183.871 143.827 175.639C144.841 175.184 146.336 173.634 146.336 173.634L146.604 171.79L146.043 152.706" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_3" d="M144.281 99.3298C144.281 99.1694 144.228 98.9823 144.228 98.8219C143.16 89.761 139.929 81.0743 134.722 73.6439C132.719 70.7305 130.423 68.0042 127.833 65.5719C126.765 64.5563 123.908 61.8834 119.903 59.3442" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_4" d="M58.2477 117.292L40.5178 107.162L43.0812 118.628L55.7111 121.087L58.2744 117.292H58.2477Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_5" d="M82.3596 112.427L87.0591 118.066L103 113.255L106.979 101.949L82.3596 112.427V112.427Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_6" d="M86.0983 140.09L74.2428 125.71L57.9013 126.539L47.1673 142.603L48.3421 180.103L54.8306 187.105L82.3601 185.876L87.0596 181.786L86.0983 140.09V140.09Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_7" d="M134.723 73.6175C131.038 72.6553 128.528 73.1631 127.006 73.7244C119.636 76.3972 115.044 87.3825 116.726 100.987" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="green" fill="currentColor" d="M65.698 106.439L0.999817 35.7162L65.698 76.7976L165.188 20L65.698 106.439Z" fill="#2D2038" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_8" d="M34.0296 112.747C33.5757 108.203 33.4155 102.457 34.1898 95.8547C34.9641 89.1459 36.4862 83.533 37.9814 79.1763" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_9" d="M146.177 98.8218H139.234C134.134 98.8218 129.942 109.914 129.622 123.946V125.737C129.622 140.571 133.921 152.653 139.234 152.653H146.177" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_10" d="M146.176 152.626C140.863 152.626 136.564 140.572 136.564 125.711C136.564 110.85 140.863 98.7954 146.176 98.7954C151.49 98.7954 155.789 110.85 155.789 125.711C155.789 140.572 151.49 152.626 146.176 152.626V152.626Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_11" d="M72.5871 144.287H77.9541V170.641H72.5871V144.287Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_12" d="M60.5441 144.901H65.9111V171.255H60.5441V144.901Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_13" d="M50.3703 145.463H55.7373V171.817H50.3703V145.463Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </g>
+            </svg>
+            
+        </div>
+
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              post-punk<br />
+              zines
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg width="118" height="214" viewBox="0 0 118 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="post-punk">
+            <g id="Group 15764">
+            <rect id="Rectangle 18" x="24.9424" y="29.5" width="92.5571" height="128.8" stroke="#51C3A6"/>
+            <rect id="Rectangle 19" x="17.3574" y="37.9287" width="92.5571" height="128.8" stroke="#51C3A6"/>
+            <rect id="Rectangle 20" x="8.92871" y="46.3569" width="92.5571" height="128.8" stroke="#51C3A6"/>
+            <rect class="green" fill="currentColor" x="0.5" y="54.7856" width="92.5571" height="128.8" stroke="#51C3A6"/>
+            </g>
+            </g>
+            </svg>
+            
+        </div>
+
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              extitutional<br />
+              journals
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg width="146" height="214" viewBox="0 0 146 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="extitutional">
+            <g id="Group 15767">
+            <path class="green" fill="currentColor" d="M72.8999 128.721L90.749 106.9L72.8999 85.0788L55.0508 106.9L72.8999 128.721Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector" d="M90.797 85.02H55.002V128.781H90.797V85.02Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_2" d="M72.9029 150.729L108.754 106.9L72.9029 63.0709L37.0519 106.9L72.9029 150.729Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_3" d="M108.849 62.9497H36.9492V150.85H108.849V62.9497Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_4" d="M72.9025 194.558L144.604 106.9L72.9025 19.2419L1.20041 106.9L72.9025 194.558Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_5" d="M144.8 19H1V194.8H144.8V19Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </g>
+            </svg>
+            
+        </div>
+
+        <div class="project-container">
+          <div class="project-content">
+            <h3>
+              post-metacrisis<br />
+              short stories
+            </h3>
+            <p>Coming soon</p>
+          </div>
+          <svg width="123" height="214" viewBox="0 0 123 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="metacrisis">
+            <g id="Group 15766">
+            <path id="Vector" d="M34.6341 180.462C34.6341 183.898 46.6397 186.683 61.4494 186.683C76.259 186.683 88.2646 183.898 88.2646 180.462C88.2646 177.026 76.259 174.24 61.4494 174.24C46.6397 174.24 34.6341 177.026 34.6341 180.462Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_2" d="M17.7287 180.462C17.7287 186.061 37.3035 190.599 61.4503 190.599C85.5971 190.599 105.172 186.061 105.172 180.462C105.172 174.864 85.5971 170.326 61.4503 170.326C37.3035 170.326 17.7287 174.864 17.7287 180.462Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_3" d="M0.830207 180.462C0.830207 188.226 27.9707 194.52 61.4503 194.52C94.9298 194.52 122.07 188.226 122.07 180.462C122.07 172.697 94.9298 166.403 61.4503 166.403C27.9707 166.403 0.830208 172.697 0.830207 180.462Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <g class="green" fill="currentColor">
+            <path id="Vector_4" d="M53.7635 180.462C53.7635 181.732 57.2047 182.762 61.4496 182.762C65.6946 182.762 69.1357 181.732 69.1357 180.462C69.1357 179.192 65.6946 178.162 61.4496 178.162C57.2047 178.162 53.7635 179.192 53.7635 180.462Z" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_5" d="M53.7557 180.389L61.4575 19L69.1357 180.462" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <path id="Vector_6" d="M34.6498 180.209L61.4651 19L88.2256 180.13" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_7" d="M17.7827 179.95L61.4651 19L105.101 179.897" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_8" d="M1.03323 179.292L61.4654 19L121.796 179.113" stroke="#51C3A6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </g>
+            </svg>
+            
+        </div>
+
+        <!-- <svg
+            width="226"
+            height="235"
+            viewBox="0 0 226 235"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M183.459 109.126C183.459 94.5601 152.065 82.751 113.337 82.751C74.6085 82.751 43.2148 94.5601 43.2148 109.126L58.6522 194.287C59.8654 200.976 65.6715 205.836 72.4488 205.836H154.222C160.999 205.836 166.809 200.976 168.018 194.287L183.456 109.126H183.459Z"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M43.2148 109.126C43.2148 70.2807 74.6085 38.792 113.337 38.792C152.065 38.792 183.459 70.2807 183.459 109.126"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M183.46 30V109.126"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M43.2148 47.584V109.127"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              class="fill"
+              d="M122.103 110.708H104.573C94.8907 110.708 87.042 118.581 87.042 128.292C87.042 138.003 94.8907 145.876 104.573 145.876H122.103C131.785 145.876 139.634 138.003 139.634 128.292C139.634 118.581 131.785 110.708 122.103 110.708Z"
+              fill="currentColor"
+              stroke="#51C3A6"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M135.251 106.313H91.4249C79.3226 106.313 69.5117 116.154 69.5117 128.293C69.5117 140.431 79.3226 150.272 91.4249 150.272H135.251C147.354 150.272 157.164 140.431 157.164 128.293C157.164 116.154 147.354 106.313 135.251 106.313Z"
+              stroke="#FF9658"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M54.7861 170.669H172.591"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M67.1299 177.703C74.8293 177.703 74.8293 188.956 82.5322 188.956C90.2351 188.956 90.2316 177.703 97.9346 177.703C105.637 177.703 105.634 188.956 113.337 188.956C121.04 188.956 121.036 177.703 128.739 177.703C136.442 177.703 136.442 188.956 144.142 188.956C151.841 188.956 151.844 177.703 159.544 177.703"
+              stroke="#FF9658"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M58.8174 194.934H167.507"
+              stroke="#F4E5C9"
+              stroke-miterlimit="10"
+            />
+          </svg> -->
+      </div>
+    </section>
+
+    <footer class="info-card">
+      <h2 class="main-text">Join Us</h2>
       <div class="footer-icons">
-        <a href="https://twitter.com/pluriversewtf" target="_blank" rel="noreferrer">
-          <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.7878 2.12422C21.9679 2.48447 21.0859 2.73292 20.1542 2.84472C21.0983 2.28571 21.8312 1.37888 22.1791 0.322981C21.2971 0.84472 20.3157 1.22981 19.2598 1.42857C18.4275 0.546584 17.235 0 15.9182 0C13.384 0 11.3344 2.03727 11.3344 4.54658C11.3344 4.90683 11.3716 5.24224 11.4586 5.59006C7.64491 5.40373 4.26603 3.59006 2.00516 0.832298C1.60764 1.50311 1.38404 2.28571 1.38404 3.11801C1.38404 4.69565 2.19149 6.08696 3.42131 6.90683C2.66354 6.88199 1.95547 6.67081 1.34677 6.3354V6.38509C1.34677 8.59627 2.92441 10.4224 5.02379 10.8447C4.6387 10.9441 4.24118 11.0062 3.81882 11.0062C3.52069 11.0062 3.23497 10.9689 2.94926 10.9193C3.53311 12.7205 5.22255 14.0373 7.23497 14.0745C5.66975 15.2919 3.68218 16.0248 1.53311 16.0248C1.16044 16.0248 0.80019 16 0.439941 15.9627C2.47721 17.2547 4.88715 18 7.471 18C15.9058 18 20.5269 11.0683 20.5269 5.0559C20.5269 4.85714 20.5269 4.65838 20.5145 4.47205C21.4213 3.83851 22.1915 3.03106 22.8002 2.1118" fill="currentColor"/>
+        <a href="https://twitter.com/pluriversewtf"
+          ><svg
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="twitterIcon"
+            role="img"
+          >
+            <desc id="twitterIcon">Twitter icon</desc>
+            <path
+              d="M60.8812 30.9579C60.9116 31.3919 60.9116 31.8258 60.9116 32.2638C60.9116 45.609 50.5927 61 31.7242 61V60.992C26.1503 61 20.6923 59.4281 16 56.4643C16.8105 56.5603 17.625 56.6083 18.4416 56.6103C23.0607 56.6143 27.5478 55.0884 31.1818 52.2785C26.7922 52.1966 22.9429 49.3787 21.5982 45.265C23.1359 45.557 24.7203 45.497 26.2295 45.091C21.4438 44.1391 18.0008 39.9993 18.0008 35.1916C18.0008 35.1476 18.0008 35.1056 18.0008 35.0636C19.4268 35.8456 21.0234 36.2796 22.6565 36.3276C18.1491 33.3617 16.7597 27.4581 19.4816 22.8424C24.6898 29.152 32.3742 32.9878 40.6232 33.3937C39.7965 29.886 40.9259 26.2102 43.5909 23.7444C47.7225 19.9206 54.2206 20.1166 58.1044 24.1823C60.4018 23.7364 62.6037 22.9064 64.6187 21.7305C63.8529 24.0683 62.2503 26.0542 60.1093 27.3161C62.1426 27.0801 64.1292 26.5442 66 25.7262C64.6228 27.7581 62.8881 29.528 60.8812 30.9579Z"
+              fill="currentColor"
+            />
+            <rect
+              x="0.5"
+              y="0.5"
+              width="79"
+              height="79"
+              rx="23.5"
+              stroke="#FF9658"
+            />
           </svg>
         </a>
-        <a href="https://github.com/pluriversewtf/pluriverse.wtf" target="_blank" rel="noreferrer">
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0C5.14641 0 0 5.14641 0 11.5C0 16.5829 3.29681 20.8892 7.86433 22.4141C8.43616 22.52 8.64794 22.167 8.64794 21.8564C8.64794 21.581 8.64088 20.861 8.63382 19.9009C5.43585 20.5927 4.75813 18.3619 4.75813 18.3619C4.23573 17.0347 3.48036 16.6817 3.48036 16.6817C2.43554 15.9687 3.55801 15.9828 3.55801 15.9828C4.70872 16.0675 5.3229 17.1688 5.3229 17.1688C6.34653 18.9266 8.01258 18.4184 8.66912 18.1219C8.77501 17.3806 9.07152 16.8723 9.39626 16.5829C6.8407 16.2934 4.15807 15.3051 4.15807 10.8999C4.15807 9.64334 4.60282 8.6197 5.34408 7.81492C5.22406 7.52548 4.82873 6.35359 5.45703 4.77225C5.45703 4.77225 6.42419 4.46163 8.61971 5.9512C9.53745 5.69705 10.5187 5.56998 11.5 5.56292C12.4742 5.56292 13.4626 5.69705 14.3803 5.9512C16.5758 4.46163 17.543 4.77225 17.543 4.77225C18.1713 6.35359 17.7759 7.52548 17.6559 7.81492C18.3901 8.6197 18.8349 9.64334 18.8349 10.8999C18.8349 15.3192 16.1452 16.2864 13.5826 16.5758C13.992 16.9288 14.3662 17.6347 14.3662 18.7078C14.3662 20.2468 14.3521 21.4822 14.3521 21.8634C14.3521 22.174 14.5568 22.527 15.1427 22.4141C19.7103 20.8892 23 16.5829 23 11.5071C23 5.14641 17.8536 0 11.5 0Z" fill="currentColor"/>
+        <a href="https://discord.gg/KKqcXECmBd">
+          <svg
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="discordIcon"
+            role="img"
+          >
+            <desc id="discordIcon">Discord icon</desc>
+            <path
+              d="M50.8416 56C50.8416 56 49.47 54.3619 48.3271 52.9143C53.3181 51.5048 55.223 48.381 55.223 48.381C53.661 49.4096 52.1751 50.1334 50.8416 50.6286C48.9366 51.4286 47.1079 51.9619 45.3172 52.2667C41.6597 52.9524 38.3069 52.7619 35.4495 52.2286C33.2778 51.8096 31.411 51.2 29.8489 50.5905C28.9726 50.2477 28.0201 49.8286 27.0676 49.2953C26.9533 49.2191 26.839 49.181 26.7247 49.1048C26.6485 49.0667 26.6104 49.0286 26.5723 48.9905C25.8866 48.6096 25.5056 48.3429 25.5056 48.3429C25.5056 48.3429 27.3343 51.3905 32.1729 52.8381C31.03 54.2857 29.6203 56 29.6203 56C21.2003 55.7333 18 50.2096 18 50.2096C18 37.943 23.4863 28.0003 23.4863 28.0003C28.9726 23.886 34.1922 24.0003 34.1922 24.0003L34.5732 24.4575C27.7153 26.4384 24.5531 29.4479 24.5531 29.4479C24.5531 29.4479 25.3913 28.9907 26.8009 28.3431C30.8776 26.5527 34.116 26.0574 35.4495 25.9432C35.6781 25.9051 35.8686 25.867 36.0972 25.867C38.4212 25.5622 41.0501 25.486 43.7932 25.7908C47.4127 26.2098 51.2988 27.2765 55.2611 29.4479C55.2611 29.4479 52.2513 26.5908 45.7744 24.6098L46.3078 24.0003C46.3078 24.0003 51.5274 23.886 57.0137 28.0003C57.0137 28.0003 62.5 37.943 62.5 50.2096C62.5 50.2096 59.2616 55.7333 50.8416 56ZM33.1254 38.2097C30.9538 38.2097 29.2393 40.1144 29.2393 42.4382C29.2393 44.762 30.9919 46.6668 33.1254 46.6668C35.2971 46.6668 37.0116 44.762 37.0116 42.4382C37.0497 40.1144 35.2971 38.2097 33.1254 38.2097ZM47.0317 38.2097C44.86 38.2097 43.1455 40.1144 43.1455 42.4382C43.1455 44.762 44.8981 46.6668 47.0317 46.6668C49.2033 46.6668 50.9178 44.762 50.9178 42.4382C50.9178 40.1144 49.2033 38.2097 47.0317 38.2097Z"
+              fill="currentColor"
+            />
+            <rect
+              x="0.5"
+              y="0.5"
+              width="79"
+              height="79"
+              rx="23.5"
+              stroke="#FF9658"
+            />
           </svg>
         </a>
-    </div>
-    </div>
-  </footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-  <script src="./script.js"></script>
-</body>
+        <a href="https://t.me/+d41fLYnvhik0YTdh"
+          ><svg
+            width="80"
+            height="80"
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="telegramIcon"
+            role="img"
+          >
+            <desc id="telegramIcon">Telegram icon</desc>
+            <path
+              d="M23.3727 37.9361C23.3727 37.9361 40.4891 30.9114 46.4255 28.4379C48.7011 27.4486 56.4183 24.2825 56.4183 24.2825C56.4183 24.2825 59.9801 22.8974 59.6833 26.2613C59.5843 27.6464 58.7928 32.4944 58.0013 37.7382C56.8141 45.1586 55.5278 53.2716 55.5278 53.2716C55.5278 53.2716 55.33 55.5472 53.648 55.943C51.966 56.3388 49.1957 54.5579 48.701 54.1621C48.3053 53.8653 41.2806 49.413 38.7082 47.2364C38.0156 46.6427 37.2241 45.4555 38.8071 44.0703C42.3689 40.8053 46.6233 36.7488 49.1957 34.1764C50.383 32.9891 51.5703 30.2188 46.6233 33.5828C39.5987 38.4308 32.6729 42.982 32.6729 42.982C32.6729 42.982 31.0899 43.9714 28.1217 43.0809C25.1536 42.1905 21.6907 41.0032 21.6907 41.0032C21.6907 41.0032 19.3161 39.5191 23.3727 37.9361Z"
+              fill="currentColor"
+            />
+            <rect
+              x="0.5"
+              y="0.5"
+              width="79"
+              height="79"
+              rx="23.5"
+              stroke="#FF9658"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
